@@ -1,0 +1,17 @@
+.container {
+  max-width: $l-end;
+  min-width: $small;
+  margin: 0 auto;
+
+  &--big {
+    padding: 0 30px;
+  }
+
+  &--middle {
+    padding: 0 95px;
+  }
+
+  &--small {
+    padding: 0 197px;
+  }
+}

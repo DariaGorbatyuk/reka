@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  min-width: $small;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  font-family: $roboto;
+  font-weight: normal;
+  font-style: normal;
+  background-color: $white;
+  color: $black;
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:not([href]) {
+  cursor: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  fill: currentColor;
+}
