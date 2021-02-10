@@ -10,10 +10,225 @@
 <body>
 <header class="header">
   <div class="container">
-
+    <div class="header__top">
+      <a href="#">
+        <svg class="logo" width="272" height="28" role="img" aria-label="StudioKora">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <nav class="header__nav">
+        <button class="header__nav-toggle close" type="button">Открыть/закрыть меню</button>
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#" class="header__nav-link">О компании</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Архитектура</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Дизайн интерьера</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Галерея</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Сотрудничество</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+        </ul>
+        <a href="tel:+78126459810">+7 (812) 645 98 10</a>
+        <div class="header__nav-bottom">
+          <address>Сакнкт-петербург, ул. зверинская 33, офис 13</address>
+          <ul class="header__socials socials">
+            <li class="socials__item">
+              <a href="#" class="socials__link" aria-label="Мы в facebook">
+                <svg width="33" height="32" role="img">
+                  <use xlink:href="img/sprite.svg#icon-f"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link" aria-label="Мы на YouTube">
+                <svg width="33" height="32" role="img">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <svg width="33" height="32" role="img" aria-label="Мы в instagram">
+                  <use xlink:href="img/sprite.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <section class="promo">
+      <p class="promo__slogan">Меняем качество жизни</p>
+      <h1 class="visually-hidden">Студия Кора: архитектура, дизайн интерьера</h1>
+      <p class="promo__heading-t">Архитектура</p>
+      <p class="promo__heading-b">дизайн интерьера</p>
+    </section>
   </div>
 </header>
-<main></main>
-<footer></footer>
+<main>
+  <section class="directions">
+    <div class="container">
+      <h2 class="directions__heading">Направления</h2>
+      <ul class="directions__list">
+        <li class="directions__item">
+          <a href="#" class="directions__link">
+            <span class="directions__name">Архитектура</span>
+          </a>
+        </li>
+        <li class="directions__item">
+          <a href="" class="directions__link">
+            <span class="directions__name">дизайн интерьера</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <p class="features__slogan">Продумываем и создаём пространство, учитывая ваш стиль жизни</p>
+    </div>
+    <img src="./img/style.jpg" alt="Светлая кухня, проект под ключ">
+    <div class="container">
+      <p class="features__text">реализация проекта под ключ</p>
+      <h2 class="features__heading">комплексный подход</h2>
+      <ul class="features__list">
+        <li class="features__item">проектирование</li>
+        <li class="features__item">строительство</li>
+        <li class="features__item">дизайн интерьера</li>
+      </ul>
+      <p class="features__columns">
+        Мы оказываем весь комплекс услуг по архитектуре и дизайну интерьера. Наша главная цель – это качество, поэтому
+        нам
+        важно персонально сопровождать проект и вести авторский надзор на каждом этапе реализации.
+        Обращаясь к нам за комплексом работ, вы сбережёте своё время и как результат получите полностью готовый дом с
+        интерьером, который идеально подходит именно вам.
+      </p>
+    </div>
+  </section>
+  <section class="portfolio">
+    <div class="container">
+      <h2 class="portfolio__heading">проекты</h2>
+    </div>
+    <ul class="portfolio__list">
+      <li class="portfolio__item">
+        <img src="./img/valentina.jpg" alt="Вилла Валентина" class="portfolio__img">
+        <p class="portfolio__desc">Архитектура<span>300 м<sup>2</sup></span></p>
+        <p class="portfolio__name">Вилла Валентина</p>
+      </li>
+      <li class="portfolio__item">
+        <img src="./img/valentina-r.jpg" alt="Вилла Валентина" class="portfolio__img">
+        <p class="portfolio__desc">Архитектура<span>300 м<sup>2</sup></span></p>
+        <p class="portfolio__name">Вилла Валентина</p>
+      </li>
+      <li class="portfolio__item">
+        <img src="./img/valentina-l.jpg" alt="Вилла Валентина" class="portfolio__img">
+        <p class="portfolio__desc">Архитектура<span>300 м<sup>2</sup></span></p>
+        <p class="portfolio__name">Вилла Валентина</p>
+      </li>
+    </ul>
+  </section>
+  <section class="about">
+    <div class="about__column-l">
+      <h2 class="about__heading">о компании</h2>
+      <p>Studiokora – это гармония архитектуры и дизайна интерьера. Мы создаём масштабные проекты и продумываем до
+        мелочей
+        окружение и пространство. Учитываем стиль жизни и характер каждого клиента.</p>
+      <a href="#">подробнее</a>
+    </div>
+    <div class="about__column-r">
+      <img src="./img/about.jpg" alt="Просторная спальная комната в светло-серых тонах">
+    </div>
+  </section>
+  <section class="partners">
+    <div class="container">
+      <h2 class="partners__heading">наши партнеры</h2>
+      <ul>
+        <li><a href="#"><img src="./img/icon-p1.svg" alt="Importhome"></a></li>
+        <li><a href="#"><img src="./img/icon-p2.svg" alt="Интерьеры экстра класса"></a></li>
+        <li><a href="#"><img src="./img/icon-p3.svg" alt="Manders - английский декор стен"></a></li>
+        <li><a href="#"><img src="./img/icon-p4.svg" alt="СЭТКОМ"></a></li>
+        <li><a href="#"><img src="./img/icon-p2.svg" alt="Интерьеры экстра класса"></a></li>
+      </ul>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts__top">
+        <h2 class="contacts__heading">Контакты</h2>
+        <p class="contacts__text">Оставьте заявку и мы вам перезвоним!</p>
+        <form action="#" method="post" name="callback">
+          <div>
+            <label class="visually-hidden" for="name">Ваше имя</label>
+            <input id="name" type="text" placeholder="Ваше имя" required>
+          </div>
+          <div>
+            <label class="visually-hidden" for="tel">Телефон</label>
+            <input id="tel" type="tel" placeholder="Телефон" required>
+          </div>
+          <div>
+            <input id="agree" type="checkbox" checked>
+            <label for="agree">Я даю согласие на обработку персональных данных</label>
+          </div>
+          <button type="submit">оставить заявку</button>
+        </form>
+      </div>
+    </div>
+    <div class="contacts__bottom">
+      <div class="contacts__info">
+        <address>
+          <p>Сакнкт-петербург, ул. зверинская 33, офис 13</p>
+          <a href="tel:+78126459810">+7 (812) 645 98 10</a>
+        </address>
+        <ul class="contacts__socials socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link" aria-label="Мы в facebook">
+              <svg width="33" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-f"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link" aria-label="Мы на YouTube">
+              <svg width="33" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg width="33" height="32" role="img" aria-label="Мы в instagram">
+                <use xlink:href="img/sprite.svg#icon-inst"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a href="#">
+        <svg class="logo" width="272" height="28" role="img" aria-label="StudioKora">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">О компании</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Архитектура</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Дизайн интерьера</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Галерея</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Сотрудничество</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <small>2020, Studiokora</small>
+      <a href="#">Политика конфидециальности</a>
+      <a href="https://rekastudio.ru/">REKA Digital Agency</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
