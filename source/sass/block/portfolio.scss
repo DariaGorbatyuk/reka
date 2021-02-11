@@ -1,3 +1,70 @@
+.portfolio {
+  padding-top: 100px;
+}
+
+.portfolio__heading {
+  margin-top: 0;
+  margin-left: 50px;
+  margin-bottom: 63px;
+}
+
+.portfolio__slider {
+  margin: 0;
+  padding: 0;
+  max-height: 895px;
+  position: relative;
+  display: block;
+}
+
+.portfolio__slider .slick-list {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+
+  & .dragging {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.portfolio__slider .slick-track {
+  display: flex;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.portfolio__item {
+  list-style: none;
+}
+
+.portfolio__slider .slick-slide {
+  &:focus {
+    outline: none;
+  }
+}
+
+.portfolio__slider .slick-slide img {
+  display: block;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+.portfolio__slider .slick-center img {
+  opacity: 1;
+}
+
+.portfolio__img-container {
+  margin-bottom: 34px;
+}
+
 .portfolio__desc {
   font-family: $pt;
   font-style: normal;
@@ -7,6 +74,9 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: $dark;
+  margin-top: 0;
+  margin-left: 60px;
+  margin-bottom: 11px;
 }
 
 .portfolio__size {
@@ -17,6 +87,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: $bright-gold;
+  margin-left: 10px;
 }
 
 .portfolio__name {
@@ -27,4 +98,43 @@
   line-height: 51px;
   letter-spacing: 2px;
   color: $dark;
+  margin-top: 0;
+  margin-left: 58px;
+}
+
+.portfolio__slider .slick-arrow {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url("../img/slider-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 41%;
+  padding: 0;
+  border: 0;
+  z-index: 2;
+  transition: all 300ms;
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/slider-arrow-active.svg");
+    outline: none;
+    transform: scale(1.2);
+  }
+}
+
+.portfolio__slider .slick-prev {
+  left: 12.4%;
+}
+
+.portfolio__slider .slick-next {
+  right: 11.9%;
+  transform: rotate(180deg);
+
+  &:hover,
+  &:focus {
+    transform: rotate(180deg) scale(1.2);
+  }
 }

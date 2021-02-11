@@ -72,7 +72,8 @@ body {
   background-color: #ffffff;
   color: #000000;
   font-size: 17px;
-  line-height: 1.2; }
+  line-height: 1.2;
+  overflow-x: hidden; }
 
 img {
   max-width: 100%;
@@ -108,6 +109,8 @@ svg {
     padding: 0 95px; }
   .container--small {
     padding: 0 197px; }
+  .container--null {
+    padding: 0; }
 
 .heading {
   font-family: "Cormorant Garamond", "Georgia", serif;
@@ -355,6 +358,61 @@ input[type="checkbox"] {
   .features__column:nth-of-type(2n+2) {
     width: 505px; }
 
+.portfolio {
+  padding-top: 100px; }
+
+.portfolio__heading {
+  margin-top: 0;
+  margin-left: 50px;
+  margin-bottom: 63px; }
+
+.portfolio__slider {
+  margin: 0;
+  padding: 0;
+  max-height: 895px;
+  position: relative;
+  display: block; }
+
+.portfolio__slider .slick-list {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+  .portfolio__slider .slick-list .dragging {
+    cursor: pointer; }
+  .portfolio__slider .slick-list:focus {
+    outline: none; }
+
+.portfolio__slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden; }
+
+.portfolio__item {
+  list-style: none; }
+
+.portfolio__slider .slick-slide:focus {
+  outline: none; }
+
+.portfolio__slider .slick-slide img {
+  display: block;
+  margin: 0 auto;
+  opacity: 0.5; }
+
+.portfolio__slider .slick-center img {
+  opacity: 1; }
+
+.portfolio__img-container {
+  margin-bottom: 34px; }
+
 .portfolio__desc {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -363,7 +421,10 @@ input[type="checkbox"] {
   line-height: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #131217; }
+  color: #131217;
+  margin-top: 0;
+  margin-left: 60px;
+  margin-bottom: 11px; }
 
 .portfolio__size {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -372,7 +433,8 @@ input[type="checkbox"] {
   line-height: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #bf9c62; }
+  color: #bf9c62;
+  margin-left: 10px; }
 
 .portfolio__name {
   font-family: "Cormorant Garamond", "Georgia", serif;
@@ -381,7 +443,41 @@ input[type="checkbox"] {
   font-size: 42px;
   line-height: 51px;
   letter-spacing: 2px;
-  color: #131217; }
+  color: #131217;
+  margin-top: 0;
+  margin-left: 58px; }
+
+.portfolio__slider .slick-arrow {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url("../img/slider-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 41%;
+  padding: 0;
+  border: 0;
+  z-index: 2;
+  -webkit-transition: all 300ms;
+  transition: all 300ms; }
+  .portfolio__slider .slick-arrow:hover, .portfolio__slider .slick-arrow:focus {
+    background-image: url("../img/slider-arrow-active.svg");
+    outline: none;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+
+.portfolio__slider .slick-prev {
+  left: 12.4%; }
+
+.portfolio__slider .slick-next {
+  right: 11.9%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+  .portfolio__slider .slick-next:hover, .portfolio__slider .slick-next:focus {
+    -webkit-transform: rotate(180deg) scale(1.2);
+            transform: rotate(180deg) scale(1.2); }
 
 .about__column-l {
   background-color: #8b8581; }

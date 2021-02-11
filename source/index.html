@@ -113,23 +113,31 @@
     <div class="container container--big">
       <h2 class="portfolio__heading heading">проекты</h2>
     </div>
-    <ul class="portfolio__list">
-      <li class="portfolio__item">
-        <img src="./img/valentina.jpg" alt="Вилла Валентина" class="portfolio__img">
-        <p class="portfolio__desc">Архитектура<span class="portfolio__size">300 м<sup>2</sup></span></p>
-        <p class="portfolio__name">Вилла Валентина</p>
-      </li>
-      <li class="portfolio__item">
-        <img src="./img/valentina-r.jpg" alt="Вилла Валентина" class="portfolio__img">
-        <p class="portfolio__desc">Архитектура<span>300 м<sup>2</sup></span></p>
-        <p class="portfolio__name">Вилла Валентина</p>
-      </li>
-      <li class="portfolio__item">
-        <img src="./img/valentina-l.jpg" alt="Вилла Валентина" class="portfolio__img">
-        <p class="portfolio__desc">Архитектура<span>300 м<sup>2</sup></span></p>
-        <p class="portfolio__name">Вилла Валентина</p>
-      </li>
-    </ul>
+    <div class="container container--null">
+      <ul class="portfolio__slider">
+        <li class="portfolio__item">
+          <div class="portfolio__img-container">
+            <img src="./img/valentina.jpg" alt="Вилла Валентина">
+          </div>
+          <p class="portfolio__desc">Архитектура<span class="portfolio__size">300 м<sup>2</sup></span></p>
+          <p class="portfolio__name">Вилла Валентина</p>
+        </li>
+        <li class="portfolio__item">
+          <div class="portfolio__img-container">
+            <img src="./img/valentina-r.jpg" alt="Вилла Валентина">
+          </div>
+          <p class="portfolio__desc">Архитектура<span class="portfolio__size">300 м<sup>2</sup></span></p>
+          <p class="portfolio__name">Вилла Валентина</p>
+        </li>
+        <li class="portfolio__item">
+          <div class="portfolio__img-container">
+            <img src="./img/valentina-r.jpg" alt="Вилла Валентина">
+          </div>
+          <p class="portfolio__desc">Архитектура<span class="portfolio__size">300 м<sup>2</sup></span></p>
+          <p class="portfolio__name">Вилла Валентина</p>
+        </li>
+      </ul>
+    </div>
   </section>
   <section class="about">
     <div class="about__column-l">
@@ -243,5 +251,8 @@
     </div>
   </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
