@@ -1,25 +1,76 @@
+.features {
+  padding-top: 102px;
+  background-color: $light-gray;
+  padding-bottom: 108px;
+}
+
 .features__slogan {
   font-family: $cg;
   font-style: normal;
   font-weight: normal;
   font-size: 38px;
-  line-height: 54px; //1.4
+  line-height: 59px; //1.4
   text-align: center;
   letter-spacing: 9.5px;
   text-transform: uppercase;
   color: $text;
   position: relative;
+  margin: 0 30px 64px 105px;
+
+  span {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 3px;
+      flex-grow: 1;
+      flex-shrink: 0;
+      background-color: $gold;
+    }
+
+    &::before {
+      margin-right: 63px;
+    }
+
+    &::after {
+      margin-left: 44px;
+    }
+  }
+}
+
+.features__img-container {
+  margin-bottom: 87px;
 }
 
 .features__text {
   font-family: $roboto;
   font-weight: normal;
-  font-size: 12px; //1.2
+  font-size: 11px;
   line-height: 14px;
+  letter-spacing: 0.16em;
   text-align: center;
-  letter-spacing: 0.19em;
   text-transform: uppercase;
   color: $dark;
+  margin-top: 0;
+  margin-right: 10px;
+  margin-bottom: 8px;
+}
+
+.features__heading {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.features__list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 217px;
+  padding-right: 184px;
+  margin-bottom: 60px;
 }
 
 .features__item {
@@ -32,13 +83,59 @@
   letter-spacing: 5px;
   text-transform: uppercase;
   color: $dark;
+  list-style: none;
+  position: relative;
+  max-width: 50%;
+  min-width: 0;
+  word-break: break-word;
+
+  &:nth-child(3n+1) {
+    padding-right: 126px;
+    margin-right: 64px;
+  }
+
+  &:nth-child(3n+2) {
+    padding-right: 172px;
+    margin-right: 22px;
+  }
+
+  &:nth-child(3n+1):not(:last-child),
+  &:nth-child(3n+2):not(:last-child) {
+    &::after {
+      @include pseudo();
+      @include size(102px, 13px);
+      background-repeat: repeat;
+      right: 0;
+      background-image: url("../img/features-arrow.svg");
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .features__columns {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 218px;
+  padding-right: 183px;
+  margin-top: 0;
+}
+
+.features__column {
   font-family: $roboto;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px; //1.6
   color: $black;
-  column-count: 2;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &:nth-of-type(2n+1) {
+    width: 558px;
+    margin-right: 60px;
+  }
+
+  &:nth-of-type(2n+2) {
+    width: 505px;
+  }
 }
