@@ -1,0 +1,30 @@
+.callback__inp {
+  font-family: $roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px; //1.7
+  letter-spacing: 1px;
+  color: $dark-dray;
+}
+
+.callback__check-label {
+  font-family: $roboto;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 28px; //2.3
+  letter-spacing: 0.5px;
+  color: $puce;
+}
+
+.callback__btn {
+  font-family: $roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px; //2.1
+  text-align: center;
+  text-transform: uppercase;
+  color: $brown-gray;
+  width: 206px;
+  border: 1px solid $gold;
+  background-color: transparent;
+}

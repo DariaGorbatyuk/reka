@@ -66,7 +66,7 @@
 <main>
   <section class="directions">
     <div class="container container--big">
-      <h2 class="directions__heading">Направления</h2>
+      <h2 class="directions__heading heading">Направления</h2>
       <ul class="directions__list">
         <li class="directions__item">
           <a href="#" class="directions__link">
@@ -85,10 +85,10 @@
     <div class="container container--small">
       <p class="features__slogan">Продумываем и создаём пространство, учитывая ваш стиль жизни</p>
     </div>
-    <img src="./img/style.jpg" alt="Светлая кухня, проект под ключ">
+    <img src="./img/style.jpg" alt="Светлая кухня, проект под ключ" height="811" width="100%">
     <div class="container container--small">
       <p class="features__text">реализация проекта под ключ</p>
-      <h2 class="features__heading">комплексный подход</h2>
+      <h2 class="features__heading heading">комплексный подход</h2>
       <ul class="features__list">
         <li class="features__item">проектирование</li>
         <li class="features__item">строительство</li>
@@ -97,7 +97,7 @@
       <p class="features__columns">
         Мы оказываем весь комплекс услуг по архитектуре и дизайну интерьера. Наша главная цель – это качество, поэтому
         нам
-        важно персонально сопровождать проект и вести авторский надзор на каждом этапе реализации.
+        важно персонально сопровождать проект и вести авторский надзор на каждом этапе реализации.<br>
         Обращаясь к нам за комплексом работ, вы сбережёте своё время и как результат получите полностью готовый дом с
         интерьером, который идеально подходит именно вам.
       </p>
@@ -105,12 +105,12 @@
   </section>
   <section class="portfolio">
     <div class="container container--big">
-      <h2 class="portfolio__heading">проекты</h2>
+      <h2 class="portfolio__heading heading">проекты</h2>
     </div>
     <ul class="portfolio__list">
       <li class="portfolio__item">
         <img src="./img/valentina.jpg" alt="Вилла Валентина" class="portfolio__img">
-        <p class="portfolio__desc">Архитектура<span>300 м<sup>2</sup></span></p>
+        <p class="portfolio__desc">Архитектура<span class="portfolio__size">300 м<sup>2</sup></span></p>
         <p class="portfolio__name">Вилла Валентина</p>
       </li>
       <li class="portfolio__item">
@@ -127,11 +127,11 @@
   </section>
   <section class="about">
     <div class="about__column-l">
-      <h2 class="about__heading">о компании</h2>
-      <p>Studiokora – это гармония архитектуры и дизайна интерьера. Мы создаём масштабные проекты и продумываем до
+      <h2 class="about__heading heading heading--about">о компании</h2>
+      <p class="about__text">Studiokora – это гармония архитектуры и дизайна интерьера. Мы создаём масштабные проекты и продумываем до
         мелочей
         окружение и пространство. Учитываем стиль жизни и характер каждого клиента.</p>
-      <a href="#">подробнее</a>
+      <a class="about__excerpt" href="#">подробнее</a>
     </div>
     <div class="about__column-r">
       <img src="./img/about.jpg" alt="Просторная спальная комната в светло-серых тонах">
@@ -139,43 +139,43 @@
   </section>
   <section class="partners">
     <div class="container container--small">
-      <h2 class="partners__heading">наши партнеры</h2>
-      <ul>
-        <li><a href="#"><img src="./img/icon-p1.svg" alt="Importhome"></a></li>
-        <li><a href="#"><img src="./img/icon-p2.svg" alt="Интерьеры экстра класса"></a></li>
-        <li><a href="#"><img src="./img/icon-p3.svg" alt="Manders - английский декор стен"></a></li>
-        <li><a href="#"><img src="./img/icon-p4.svg" alt="СЭТКОМ"></a></li>
-        <li><a href="#"><img src="./img/icon-p2.svg" alt="Интерьеры экстра класса"></a></li>
+      <h2 class="partners__heading heading">наши партнеры</h2>
+      <ul class="partners__list">
+        <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p1.svg" alt="Importhome"></a></li>
+        <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p2.svg" alt="Интерьеры экстра класса"></a></li>
+        <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p3.svg" alt="Manders - английский декор стен"></a></li>
+        <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p4.svg" alt="СЭТКОМ"></a></li>
+        <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p2.svg" alt="Интерьеры экстра класса"></a></li>
       </ul>
     </div>
   </section>
   <section class="contacts">
     <div class="container container--small">
       <div class="contacts__top">
-        <h2 class="contacts__heading">Контакты</h2>
+        <h2 class="contacts__heading heading">Контакты</h2>
         <p class="contacts__text">Оставьте заявку и мы вам перезвоним!</p>
-        <form action="#" method="post" name="callback">
-          <div>
+        <form class="contacts__callback callback" action="#" method="post" name="callback">
+          <div class="callback__container-inp">
             <label class="visually-hidden" for="name">Ваше имя</label>
-            <input id="name" type="text" placeholder="Ваше имя" required="">
+            <input class="callback__inp" id="name" type="text" placeholder="Ваше имя" required="">
           </div>
-          <div>
+          <div class="callback__container-inp">
             <label class="visually-hidden" for="tel">Телефон</label>
-            <input id="tel" type="tel" placeholder="Телефон" required="">
+            <input class="callback__inp" id="tel" type="tel" placeholder="Телефон" required="">
           </div>
           <div>
             <input id="agree" type="checkbox" checked="">
-            <label for="agree">Я даю согласие на обработку персональных данных</label>
+            <label class="callback__check-label" for="agree">Я даю согласие на обработку персональных данных</label>
           </div>
-          <button type="submit">оставить заявку</button>
+          <button class="callback__btn" type="submit">оставить заявку</button>
         </form>
       </div>
     </div>
     <div class="contacts__bottom">
       <div class="contacts__info">
-        <address>
-          <p>Сакнкт-петербург, ул. зверинская 33, офис 13</p>
-          <a href="tel:+78126459810">+7 (812) 645 98 10</a>
+        <address class="contacts__address">
+          <p class="contacts__city">Сакнкт-петербург, ул. зверинская 33, офис 13</p>
+          <a class="contacts__tel" href="tel:+78126459810">+7 (812) 645 98 10</a>
         </address>
         <ul class="contacts__socials socials">
           <li class="socials__item">
@@ -224,7 +224,7 @@
       </nav>
     </div>
     <div class="footer__bottom">
-      <small>2020, Studiokora</small>
+      <span>2020, Studiokora</span>
       <a href="#">Политика конфидециальности</a>
       <a href="https://rekastudio.ru/">REKA Digital Agency</a>
     </div>

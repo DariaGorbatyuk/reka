@@ -1,0 +1,30 @@
+.directions__list {
+  margin: 0;
+  padding: 0;
+}
+
+.directions__item {
+  list-style: none;
+}
+
+.directions__name {
+  font-family: $cg;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 46px; ////1.2
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  position: relative;
+
+  &::after {
+    @include pseudo();
+    @include size(127px, 3px);
+    background-color: $gold;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}

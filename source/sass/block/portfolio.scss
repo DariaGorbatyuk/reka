@@ -1,0 +1,30 @@
+.portfolio__desc {
+  font-family: $pt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px; //1.2
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $dark;
+}
+
+.portfolio__size {
+  font-family: $pt;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px; //1.2
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $bright-gold;
+}
+
+.portfolio__name {
+  font-family: $cg;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: 2px;
+  color: $dark;
+}

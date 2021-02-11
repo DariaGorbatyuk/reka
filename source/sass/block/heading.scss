@@ -1,0 +1,26 @@
+.heading {
+  font-family: $cg;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 46px; //1.2
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  position: relative;
+
+  &::after {
+    @include pseudo();
+    @include size(127px, 3px);
+    background-color: $gold;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &--about {
+    color: $white
+  }
+}

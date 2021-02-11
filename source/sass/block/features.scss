@@ -1,0 +1,44 @@
+.features__slogan {
+  font-family: $cg;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 54px; //1.4
+  text-align: center;
+  letter-spacing: 9.5px;
+  text-transform: uppercase;
+  color: $text;
+  position: relative;
+}
+
+.features__text {
+  font-family: $roboto;
+  font-weight: normal;
+  font-size: 12px; //1.2
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: $dark;
+}
+
+.features__item {
+  font-family: $cg;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px; //1.2
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $dark;
+}
+
+.features__columns {
+  font-family: $roboto;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px; //1.6
+  color: $black;
+  column-count: 2;
+}

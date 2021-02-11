@@ -43,7 +43,7 @@
 @font-face {
   font-family: "Cormorant Garamond";
   src: url("../font/CormorantGaramond-SemiBold.woff2") format("woff2"), url("../font/CormorantGaramond-SemiBold.woff2") format("woff");
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   font-display: swap; }
 
@@ -62,7 +62,7 @@ body {
   margin: 0 auto;
   padding: 0;
   min-height: 100%;
-  min-width: 420px;
+  min-width: #7f8184;
   display: grid;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
@@ -100,7 +100,7 @@ svg {
 
 .container {
   max-width: 1920px;
-  min-width: 420px;
+  min-width: #7f8184;
   margin: 0 auto; }
   .container--big {
     padding: 0 30px; }
@@ -109,7 +109,33 @@ svg {
   .container--small {
     padding: 0 197px; }
 
-.visually-hidden {
+.heading {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  position: relative; }
+  .heading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 127px;
+    height: 3px;
+    background-color: #ccbb9e;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  .heading--about {
+    color: #ffffff; }
+
+.visually-hidden,
+input[type="checkbox"] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -121,3 +147,198 @@ svg {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden; }
+
+.directions__list {
+  margin: 0;
+  padding: 0; }
+
+.directions__item {
+  list-style: none; }
+
+.directions__name {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative; }
+  .directions__name::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 127px;
+    height: 3px;
+    background-color: #ccbb9e;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+
+.features__slogan {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 9.5px;
+  text-transform: uppercase;
+  color: #3e3d3c;
+  position: relative; }
+
+.features__text {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: #131217; }
+
+.features__item {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #131217; }
+
+.features__columns {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2; }
+
+.portfolio__desc {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #131217; }
+
+.portfolio__size {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #bf9c62; }
+
+.portfolio__name {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: 2px;
+  color: #131217; }
+
+.about__column-l {
+  background-color: #8b8581; }
+
+.about__text {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff; }
+
+.about__excerpt {
+  display: block;
+  width: 192px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent; }
+
+.partners__list {
+  margin: 0;
+  padding: 0; }
+
+.partners__item {
+  list-style: none; }
+
+.contacts__text {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #818181;
+  text-align: center; }
+
+.contacts__city {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000; }
+
+.contacts__tel {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8f6b2d; }
+
+.callback__inp {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #5f5d65; }
+
+.callback__check-label {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  color: #818181; }
+
+.callback__btn {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4b4a50;
+  width: 206px;
+  border: 1px solid #ccbb9e;
+  background-color: transparent; }
+
+.footer__nav-link {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #131217; }
+
+.footer__bottom {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7f8184; }
