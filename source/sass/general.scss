@@ -14,8 +14,7 @@ body {
   padding: 0;
   min-height: 100%;
   min-width: $small;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  display: block;
   font-family: $roboto;
   font-weight: normal;
   font-style: normal;
