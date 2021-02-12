@@ -23,6 +23,7 @@ $(document).ready(function () {
     easing: 'ease',
     infinite: true,
     centerPadding: '250px',
+    variableWidth: true,
  /*   autoplay: true,
     autoplaySpeed: 3000*/
   });

@@ -413,7 +413,10 @@ input[type="checkbox"] {
   overflow: hidden; }
 
 .portfolio__item {
-  list-style: none; }
+  list-style: none;
+  max-width: 68.54%;
+  padding: 0 60px;
+  margin: 0 -15px; }
 
 .portfolio__slider .slick-slide:focus {
   outline: none; }
@@ -439,7 +442,6 @@ input[type="checkbox"] {
   text-transform: uppercase;
   color: #131217;
   margin-top: 0;
-  margin-left: 4.3%;
   margin-bottom: 11px; }
 
 .portfolio__size {
@@ -461,17 +463,16 @@ input[type="checkbox"] {
   letter-spacing: 2px;
   color: #131217;
   margin-top: 0;
-  margin-left: 4.1%;
   margin-bottom: 0; }
 
 .portfolio__slider .slick-arrow {
-  width: 30px;
+  width: 45px;
   height: 50px;
   position: absolute;
   font-size: 0;
   background-color: transparent;
   background-image: url("../img/slider-arrow.svg");
-  background-size: contain;
+  background-size: 34px 43px;
   background-repeat: no-repeat;
   top: 41%;
   padding: 0;
@@ -484,17 +485,28 @@ input[type="checkbox"] {
     outline: none;
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
+  @media (max-width: 1440px) {
+    .portfolio__slider .slick-arrow {
+      background-color: rgba(255, 255, 255, 0.5);
+      background-position: center;
+      width: 50px; } }
 
 .portfolio__slider .slick-prev {
-  left: 12.4%; }
+  left: calc(50% - 724px); }
+  @media (max-width: 1440px) {
+    .portfolio__slider .slick-prev {
+      left: 0; } }
 
 .portfolio__slider .slick-next {
-  right: 11.9%;
+  right: calc(50% - 730px);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
   .portfolio__slider .slick-next:hover, .portfolio__slider .slick-next:focus {
     -webkit-transform: rotate(180deg) scale(1.2);
             transform: rotate(180deg) scale(1.2); }
+  @media (max-width: 1440px) {
+    .portfolio__slider .slick-next {
+      right: 0; } }
 
 .about {
   display: -webkit-box;
