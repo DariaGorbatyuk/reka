@@ -74,7 +74,9 @@ gulp.task('sprite', function () {
   return gulp.src('source/img/**/icon-*.svg')
       .pipe(rename({prefix: ''}))
       .pipe(cheerio({
-
+        run: function ($) {
+          $('[fill]').removeAttr('fill');
+        },
         parserOptions: {xmlMode: true},
       }))
       .pipe(svgstore({inlineSvg: true}))

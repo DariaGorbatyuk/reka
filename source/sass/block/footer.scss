@@ -1,3 +1,45 @@
+.footer {
+  background-color: $bright-gray;
+  padding-top: 52px;
+  padding-bottom: 35px;
+}
+
+.footer__top {
+  color: $dark;
+  display: flex;
+  align-items: center;
+  padding-bottom: 36px;
+  position: relative;
+
+  &::after {
+    @include pseudo();
+    @include size(100%, 1px);
+    background-color: $line;
+    bottom: 0;
+  }
+}
+
+.footer__logo {
+  margin-right: 28.3%;
+  padding-top: 4px;
+}
+
+.footer__nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 9px;
+}
+
+.footer__nav-item {
+  list-style: none;
+
+  &:not(:last-child) {
+    margin-right: 48px;
+  }
+}
+
 .footer__nav-link {
   font-family: $roboto;
   font-weight: normal;
@@ -6,6 +48,15 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $dark;
+
+  &:hover,
+  &:focus {
+    color: $pure-gold;
+  }
+
+  &:active {
+    color: $bright-gold;
+  }
 }
 
 .footer__bottom {
@@ -14,4 +65,22 @@
   font-size: 14px;
   line-height: 16px;
   color: $small;
+  padding-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 7px;
+}
+
+.footer__bottom-item {
+  flex: 0 1 33%;
+
+  &:nth-child(3n+2) {
+    text-align: center;
+    padding-left: 100px;
+  }
+
+  &:nth-child(3n+3) {
+    text-align: right;
+  }
 }

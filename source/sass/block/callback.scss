@@ -7,8 +7,12 @@
   margin-bottom: 40px;
 }
 
-.callback__container-inp:not(:last-child) {
-  margin-right: 44px;
+.callback__container-inp {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 44px;
+  }
 }
 
 .callback__svg {

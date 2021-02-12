@@ -151,6 +151,9 @@ button {
 .socials__item {
   list-style: none; }
 
+.socials__link svg {
+  fill: #c4b192; }
+
 .visually-hidden,
 input[type="checkbox"] {
   position: absolute;
@@ -726,8 +729,10 @@ input[type="checkbox"] {
   padding: 0 19.2% 0 19.56%;
   margin-bottom: 40px; }
 
-.callback__container-inp:not(:last-child) {
-  margin-right: 44px; }
+.callback__container-inp {
+  position: relative; }
+  .callback__container-inp:not(:last-child) {
+    margin-right: 44px; }
 
 .callback__svg {
   position: absolute;
@@ -800,6 +805,49 @@ input[type="checkbox"] {
   padding-top: 12px;
   padding-bottom: 10px; }
 
+.footer {
+  background-color: #edece7;
+  padding-top: 52px;
+  padding-bottom: 35px; }
+
+.footer__top {
+  color: #131217;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 36px;
+  position: relative; }
+  .footer__top::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.14);
+    bottom: 0; }
+
+.footer__logo {
+  margin-right: 28.3%;
+  padding-top: 4px; }
+
+.footer__nav-list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-right: 9px; }
+
+.footer__nav-item {
+  list-style: none; }
+  .footer__nav-item:not(:last-child) {
+    margin-right: 48px; }
+
 .footer__nav-link {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
@@ -808,10 +856,34 @@ input[type="checkbox"] {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #131217; }
+  .footer__nav-link:hover, .footer__nav-link:focus {
+    color: #8f6b2d; }
+  .footer__nav-link:active {
+    color: #bf9c62; }
 
 .footer__bottom {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  color: #7f8184; }
+  color: #7f8184;
+  padding-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 7px; }
+
+.footer__bottom-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%; }
+  .footer__bottom-item:nth-child(3n+2) {
+    text-align: center;
+    padding-left: 100px; }
+  .footer__bottom-item:nth-child(3n+3) {
+    text-align: right; }
