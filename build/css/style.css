@@ -94,9 +94,6 @@ a:not([href]) {
 button {
   cursor: pointer; }
 
-svg {
-  fill: currentColor; }
-
 .container {
   max-width: 1920px;
   min-width: #7f8184;
@@ -139,6 +136,20 @@ svg {
     color: #ffffff; }
   .heading--tall {
     padding-bottom: 18px; }
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px; }
+
+.socials__item {
+  list-style: none; }
 
 .visually-hidden,
 input[type="checkbox"] {
@@ -492,13 +503,13 @@ input[type="checkbox"] {
 
 .about__column-l {
   background-color: #8b8581;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 49%;
-          flex: 0 0 49%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
   max-width: 49%;
   min-width: 0;
   word-break: break-word;
-  padding: 152px 171px 180px 194px; }
+  padding: 151px 9.0% 180px 10.2%; }
 
 .about__heading {
   margin-top: 0;
@@ -530,13 +541,19 @@ input[type="checkbox"] {
   text-transform: uppercase; }
 
 .about__column-r {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 51%;
-          flex: 0 0 51%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
   max-width: 51%; }
 
+.about__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%; }
+
 .partners {
-  padding-top: 87px; }
+  padding-top: 87px;
+  padding-bottom: 80px; }
 
 .partners__heading {
   margin-top: 0;
@@ -617,6 +634,49 @@ input[type="checkbox"] {
     -webkit-transform: rotate(180deg) scale(1.2);
             transform: rotate(180deg) scale(1.2); }
 
+.contacts {
+  background-color: #edece7; }
+
+.contacts__top {
+  padding-top: 91px;
+  padding-bottom: 67px; }
+
+.contacts__heading {
+  margin-top: 0;
+  margin-bottom: 41px; }
+
+.contacts__bottom {
+  background-image: url("../img/map.jpg");
+  min-height: 553px;
+  position: relative; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .contacts__bottom {
+      background-image: url("../img/map@2x.jpg"); } }
+
+.contacts__info {
+  width: 291px;
+  background-color: #ffffff;
+  padding: 39px 57px 45px;
+  position: absolute;
+  right: 25.5%;
+  top: 134px; }
+
+.contacts__address {
+  text-align: center;
+  padding-bottom: 29px;
+  position: relative; }
+  .contacts__address::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 84px;
+    height: 1px;
+    background-color: #8f6b2d;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
 .contacts__text {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
@@ -624,19 +684,25 @@ input[type="checkbox"] {
   line-height: 28px;
   letter-spacing: 1px;
   color: #818181;
-  text-align: center; }
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px; }
 
 .contacts__city {
   font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #000000; }
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 5px; }
 
 .contacts__tel {
   font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
@@ -644,13 +710,50 @@ input[type="checkbox"] {
   text-transform: uppercase;
   color: #8f6b2d; }
 
+.contacts__socials {
+  margin: 27px 0 0; }
+
+.callback__container-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding: 0 19.2% 0 19.56%;
+  margin-bottom: 40px; }
+
+.callback__container-inp:not(:last-child) {
+  margin-right: 44px; }
+
+.callback__svg {
+  position: absolute;
+  fill: #4b4a50;
+  top: 16%; }
+
 .callback__inp {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 1px;
-  color: #5f5d65; }
+  color: #5f5d65;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #4b4a50;
+  padding-bottom: 12px;
+  padding-left: 38px; }
+  .callback__inp--name {
+    width: 445px; }
+  .callback__inp--tel {
+    width: 443px; }
+
+.callback__container-check {
+  text-align: center;
+  margin-bottom: 27px; }
 
 .callback__check-label {
   font-family: "Roboto", "Arial", sans-serif;
@@ -658,7 +761,28 @@ input[type="checkbox"] {
   font-size: 12px;
   line-height: 28px;
   letter-spacing: 0.5px;
-  color: #818181; }
+  color: #818181;
+  position: relative;
+  padding-left: 41px; }
+  .callback__check-label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #c4b192;
+    left: 0; }
+  input:checked + .callback__check-label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../img/check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 6px;
+    top: 0;
+    width: 14px;
+    height: 10px; }
 
 .callback__btn {
   font-family: "Roboto", "Arial", sans-serif;
@@ -670,7 +794,11 @@ input[type="checkbox"] {
   color: #4b4a50;
   width: 206px;
   border: 1px solid #ccbb9e;
-  background-color: transparent; }
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 10px; }
 
 .footer__nav-link {
   font-family: "Roboto", "Arial", sans-serif;

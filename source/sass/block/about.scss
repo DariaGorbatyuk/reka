@@ -5,11 +5,11 @@
 
 .about__column-l {
   background-color: $gray;
-  flex: 0 0 49%;
+  flex: 1 1 0;
   max-width: 49%;
   min-width: 0;
   word-break: break-word;
-  padding: 152px 171px 180px 194px;
+  padding: 151px 9.0% 180px 10.2%;
 }
 
 .about__heading {
@@ -45,6 +45,11 @@
 }
 
 .about__column-r {
-  flex: 0 0 51%;
+  flex: 1 1 0;
   max-width: 51%;
+}
+
+.about__img {
+  object-fit: cover;
+  height: 100%;
 }

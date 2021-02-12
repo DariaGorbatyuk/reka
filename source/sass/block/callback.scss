@@ -1,3 +1,22 @@
+.callback__container-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 19.2% 0 19.56%;
+  margin-bottom: 40px;
+}
+
+.callback__container-inp:not(:last-child) {
+  margin-right: 44px;
+}
+
+.callback__svg {
+  position: absolute;
+  fill: $graphite;
+  top: 16%;
+}
+
 .callback__inp {
   font-family: $roboto;
   font-weight: normal;
@@ -5,6 +24,25 @@
   line-height: 28px; //1.7
   letter-spacing: 1px;
   color: $dark-dray;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid $graphite;
+  padding-bottom: 12px;
+  padding-left: 38px;
+
+  &--name {
+    width: 445px;
+  }
+
+  &--tel {
+    width: 443px;
+  }
+}
+
+.callback__container-check {
+  text-align: center;
+  margin-bottom: 27px;
+
 }
 
 .callback__check-label {
@@ -14,6 +52,25 @@
   line-height: 28px; //2.3
   letter-spacing: 0.5px;
   color: $puce;
+  position: relative;
+  padding-left: 41px;
+
+  &::before {
+    @include pseudo();
+    @include square(25px);
+    background-color: $pale-gold;
+    left: 0;
+  }
+
+  input:checked + &::after {
+    @include pseudo();
+    background-image: url("../img/check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 6px;
+    top: 0;
+    @include size(14px, 10px);
+  }
 }
 
 .callback__btn {
@@ -27,4 +84,8 @@
   width: 206px;
   border: 1px solid $gold;
   background-color: transparent;
+  display: block;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 10px;
 }

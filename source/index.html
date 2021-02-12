@@ -147,7 +147,7 @@
       <a class="about__excerpt" href="#">подробнее</a>
     </div>
     <div class="about__column-r">
-      <img src="./img/about.jpg" alt="Просторная спальная комната в светло-серых тонах">
+      <img class="about__img" src="./img/about.jpg" alt="Просторная спальная комната в светло-серых тонах">
     </div>
   </section>
   <section class="partners">
@@ -173,18 +173,26 @@
   <section class="contacts">
     <div class="container container--small">
       <div class="contacts__top">
-        <h2 class="contacts__heading heading">Контакты</h2>
+        <h2 class="contacts__heading heading heading--tall">Контакты</h2>
         <p class="contacts__text">Оставьте заявку и мы вам перезвоним!</p>
         <form class="contacts__callback callback" action="#" method="post" name="callback">
-          <div class="callback__container-inp">
-            <label class="visually-hidden" for="name">Ваше имя</label>
-            <input class="callback__inp" id="name" type="text" placeholder="Ваше имя" required>
+          <div class="callback__container-inputs">
+            <div class="callback__container-inp">
+              <svg class="callback__svg" width="18" height="18" role="img">
+                <use xlink:href="img/sprite.svg#icon-login"></use>
+              </svg>
+              <label class="visually-hidden" for="name">Ваше имя</label>
+              <input class="callback__inp callback__inp--name" id="name" type="text" placeholder="Ваше имя" required>
+            </div>
+            <div class="callback__container-inp">
+              <svg class="callback__svg" width="18" height="18" role="img">
+                <use xlink:href="img/sprite.svg#icon-tel"></use>
+              </svg>
+              <label class="visually-hidden" for="tel">Телефон</label>
+              <input class="callback__inp callback__inp--tel" id="tel" type="tel" placeholder="Телефон" required>
+            </div>
           </div>
-          <div class="callback__container-inp">
-            <label class="visually-hidden" for="tel">Телефон</label>
-            <input class="callback__inp" id="tel" type="tel" placeholder="Телефон" required>
-          </div>
-          <div>
+          <div class="callback__container-check">
             <input id="agree" type="checkbox" checked>
             <label class="callback__check-label" for="agree">Я даю согласие на обработку персональных данных</label>
           </div>
