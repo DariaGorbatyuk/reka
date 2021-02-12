@@ -27,3 +27,9 @@ $(document).ready(function () {
     autoplaySpeed: 3000*/
   });
 });
+
+$(document).ready(function () {
+  $('.partners__slider').slick({
+    slidesToShow: 4
+  });
+});

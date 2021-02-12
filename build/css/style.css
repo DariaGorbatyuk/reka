@@ -137,6 +137,8 @@ svg {
     margin: auto; }
   .heading--about {
     color: #ffffff; }
+  .heading--tall {
+    padding-bottom: 18px; }
 
 .visually-hidden,
 input[type="checkbox"] {
@@ -533,12 +535,87 @@ input[type="checkbox"] {
           flex: 0 0 51%;
   max-width: 51%; }
 
-.partners__list {
+.partners {
+  padding-top: 87px; }
+
+.partners__heading {
+  margin-top: 0;
+  margin-bottom: 70px; }
+
+.partners__slider {
+  margin: 0;
+  position: relative;
+  display: block;
+  padding: 20px 33px 10px; }
+
+.partners__slider .slick-list {
+  display: block;
+  overflow: hidden;
   margin: 0;
   padding: 0; }
+  .partners__slider .slick-list .dragging {
+    cursor: pointer; }
+  .partners__slider .slick-list:focus {
+    outline: none; }
+
+.partners__slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden; }
 
 .partners__item {
   list-style: none; }
+
+.portfolio__slider .slick-slide:focus {
+  outline: none; }
+
+.partners__img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1); }
+
+.partners__slider .slick-slide img {
+  display: block;
+  margin: 0 auto; }
+
+.partners__slider .slick-arrow {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url("../img/slider-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 4%;
+  padding: 0;
+  border: 0;
+  z-index: 2;
+  -webkit-transition: all 300ms;
+  transition: all 300ms; }
+  .partners__slider .slick-arrow:hover, .partners__slider .slick-arrow:focus {
+    background-image: url("../img/slider-arrow-active.svg");
+    outline: none;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+
+.partners__slider .slick-prev {
+  left: 0; }
+
+.partners__slider .slick-next {
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+  .partners__slider .slick-next:hover, .partners__slider .slick-next:focus {
+    -webkit-transform: rotate(180deg) scale(1.2);
+            transform: rotate(180deg) scale(1.2); }
 
 .contacts__text {
   font-family: "Roboto", "Arial", sans-serif;
