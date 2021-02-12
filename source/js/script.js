@@ -22,7 +22,7 @@ $(document).ready(function () {
     speed: 1000,
     easing: 'ease',
     infinite: true,
-    centerPadding: '13%',
+    centerPadding: '250px',
  /*   autoplay: true,
     autoplaySpeed: 3000*/
   });

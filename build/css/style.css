@@ -99,11 +99,11 @@ button {
   min-width: #7f8184;
   margin: 0 auto; }
   .container--big {
-    padding: 0 30px; }
+    padding: 0 1.56%; }
   .container--middle {
-    padding: 0 95px; }
+    padding: 0 4.95%; }
   .container--small {
-    padding: 0 197px; }
+    padding: 0 10.26%; }
   .container--null {
     padding: 0; }
 
@@ -313,9 +313,12 @@ input[type="checkbox"] {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 217px;
-  padding-right: 184px;
-  margin-bottom: 60px; }
+  padding-left: 14.35%;
+  padding-right: 12.16%;
+  margin-bottom: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .features__item {
   font-family: "Cormorant Garamond", "Georgia", serif;
@@ -329,15 +332,13 @@ input[type="checkbox"] {
   color: #131217;
   list-style: none;
   position: relative;
-  max-width: 50%;
+  max-width: 100%;
   min-width: 0;
   word-break: break-word; }
   .features__item:nth-child(3n+1) {
-    padding-right: 126px;
-    margin-right: 64px; }
+    padding-right: 126px; }
   .features__item:nth-child(3n+2) {
-    padding-right: 172px;
-    margin-right: 22px; }
+    padding-right: 172px; }
   .features__item:nth-child(3n+1):not(:last-child)::after, .features__item:nth-child(3n+2):not(:last-child)::after {
     content: "";
     display: block;
@@ -355,10 +356,8 @@ input[type="checkbox"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 218px;
-  padding-right: 183px;
+  padding-left: 14.28%;
+  padding-right: 11.9%;
   margin-top: 0; }
 
 .features__column {
@@ -730,9 +729,10 @@ input[type="checkbox"] {
   margin-bottom: 40px; }
 
 .callback__container-inp {
-  position: relative; }
-  .callback__container-inp:not(:last-child) {
-    margin-right: 44px; }
+  position: relative;
+  width: 47%; }
+  .callback__container-inp:first-child {
+    width: 47.7%; }
 
 .callback__svg {
   position: absolute;
@@ -750,11 +750,8 @@ input[type="checkbox"] {
   border: 0;
   border-bottom: 1px solid #4b4a50;
   padding-bottom: 12px;
-  padding-left: 38px; }
-  .callback__inp--name {
-    width: 445px; }
-  .callback__inp--tel {
-    width: 443px; }
+  padding-left: 38px;
+  width: 100%; }
 
 .callback__container-check {
   text-align: center;

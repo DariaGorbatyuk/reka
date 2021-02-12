@@ -68,9 +68,10 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 217px;
-  padding-right: 184px;
+  padding-left: 14.35%;
+  padding-right: 12.16%;
   margin-bottom: 60px;
+  justify-content: space-between;
 }
 
 .features__item {
@@ -85,18 +86,16 @@
   color: $dark;
   list-style: none;
   position: relative;
-  max-width: 50%;
+  max-width: 100%;
   min-width: 0;
   word-break: break-word;
 
   &:nth-child(3n+1) {
     padding-right: 126px;
-    margin-right: 64px;
   }
 
   &:nth-child(3n+2) {
     padding-right: 172px;
-    margin-right: 22px;
   }
 
   &:nth-child(3n+1):not(:last-child),
@@ -115,9 +114,8 @@
 
 .features__columns {
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 218px;
-  padding-right: 183px;
+  padding-left: 14.28%;
+  padding-right: 11.9%;
   margin-top: 0;
 }
 
