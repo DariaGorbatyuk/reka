@@ -24,13 +24,27 @@ $(document).ready(function () {
     infinite: true,
     centerPadding: '250px',
     variableWidth: true,
- /*   autoplay: true,
-    autoplaySpeed: 3000*/
+    /*   autoplay: true,
+       autoplaySpeed: 3000*/
   });
 });
 
 $(document).ready(function () {
   $('.partners__slider').slick({
-    slidesToShow: 4
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1110,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
 });

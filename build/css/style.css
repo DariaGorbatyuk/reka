@@ -47,6 +47,11 @@
   font-style: normal;
   font-display: swap; }
 
+/*
+my breakpoints
+1920
+1024
+*/
 *,
 *::before,
 *::after {
@@ -334,7 +339,10 @@ input[type="checkbox"] {
   position: relative;
   max-width: 100%;
   min-width: 0;
-  word-break: break-word; }
+  word-break: break-word;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
   .features__item:nth-child(3n+1) {
     padding-right: 126px; }
   .features__item:nth-child(3n+2) {
@@ -839,7 +847,8 @@ input[type="checkbox"] {
     bottom: 0; }
 
 .footer__logo {
-  margin-right: 28.3%;
+  margin-right: auto;
+  padding-right: 40px;
   padding-top: 4px; }
 
 .footer__nav-list {

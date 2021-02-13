@@ -89,6 +89,7 @@
   max-width: 100%;
   min-width: 0;
   word-break: break-word;
+  flex-grow: 1;
 
   &:nth-child(3n+1) {
     padding-right: 126px;
