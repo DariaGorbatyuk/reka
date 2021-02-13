@@ -604,7 +604,8 @@ input[type="checkbox"] {
   overflow: hidden; }
 
 .partners__item {
-  list-style: none; }
+  list-style: none;
+  padding: 0 20px; }
 
 .portfolio__slider .slick-slide:focus {
   outline: none; }

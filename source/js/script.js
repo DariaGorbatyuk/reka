@@ -32,19 +32,20 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.partners__slider').slick({
     slidesToShow: 4,
+
     responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 1110,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
+      /*   {
+           breakpoint: 1440,
+           settings: {
+             slidesToShow: 3,
+           },
+         },*/
+      /* {
+         breakpoint: 1110,
+         settings: {
+           slidesToShow: 2,
+         },
+       },*/
     ],
   });
 });
