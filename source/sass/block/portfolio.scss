@@ -44,8 +44,7 @@
 .portfolio__item {
   list-style: none;
   max-width: 68.54%;
-  padding: 0 60px;
-  margin: 0 -15px;
+  padding: 0 0.5%;
 }
 
 .portfolio__slider .slick-slide {
@@ -133,22 +132,15 @@
 }
 
 .portfolio__slider .slick-prev {
-  left: calc(50% - 724px);
-
-  @media (max-width: $large) {
-    left: 0;
-  }
+  left: 12%;
 }
 
 .portfolio__slider .slick-next {
-  right: calc(50% - 730px);
+  right: 12%;
   transform: rotate(180deg);
 
   &:hover,
   &:focus {
     transform: rotate(180deg) scale(1.2);
-  }
-  @media (max-width: $large) {
-    right: 0;
   }
 }

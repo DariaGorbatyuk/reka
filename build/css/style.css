@@ -423,8 +423,7 @@ input[type="checkbox"] {
 .portfolio__item {
   list-style: none;
   max-width: 68.54%;
-  padding: 0 60px;
-  margin: 0 -15px; }
+  padding: 0 0.5%; }
 
 .portfolio__slider .slick-slide:focus {
   outline: none; }
@@ -500,21 +499,15 @@ input[type="checkbox"] {
       width: 50px; } }
 
 .portfolio__slider .slick-prev {
-  left: calc(50% - 724px); }
-  @media (max-width: 1440px) {
-    .portfolio__slider .slick-prev {
-      left: 0; } }
+  left: 12%; }
 
 .portfolio__slider .slick-next {
-  right: calc(50% - 730px);
+  right: 12%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
   .portfolio__slider .slick-next:hover, .portfolio__slider .slick-next:focus {
     -webkit-transform: rotate(180deg) scale(1.2);
             transform: rotate(180deg) scale(1.2); }
-  @media (max-width: 1440px) {
-    .portfolio__slider .slick-next {
-      right: 0; } }
 
 .about {
   display: -webkit-box;
