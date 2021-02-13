@@ -99,6 +99,10 @@
     top: 0;
     @include size(14px, 10px);
   }
+
+  @media (max-width: $small) {
+    line-height: 16px;
+  }
 }
 
 .callback__btn {

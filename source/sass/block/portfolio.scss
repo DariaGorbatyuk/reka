@@ -1,12 +1,20 @@
 .portfolio {
   padding-top: 100px;
+  padding-bottom: 104px;
 
   @media (max-width: $large) {
     padding-top: 80px;
+    padding-bottom: 84px;
   }
 
   @media (max-width: $medium) {
     padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  @media (max-width: $small) {
+    padding-top: 48px;
+    padding-bottom: 46px;
   }
 }
 
@@ -21,6 +29,10 @@
 
   @media (max-width: $medium) {
     margin-bottom: 40px;
+  }
+
+  @media (max-width: $small) {
+    margin-bottom: 32px;
   }
 }
 
@@ -89,6 +101,18 @@
 
 .portfolio__img-container {
   margin-bottom: 34px;
+
+  @media (max-width: $small) {
+    margin-bottom: 6px;
+  }
+}
+
+.portfolio__desc-container {
+  @media (max-width: $small) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .portfolio__desc {
@@ -111,6 +135,10 @@
   @media (max-width: $medium) {
     font-size: 10px;
     line-height: 12px;
+  }
+
+  @media (max-width: $small) {
+    margin-bottom: 0;
   }
 }
 
@@ -156,6 +184,12 @@
     font-size: 30px;
     line-height: 36px;
   }
+
+  @media (max-width: $small) {
+    font-size: 24px;
+    line-height: 29px;
+    order: -1;
+  }
 }
 
 .portfolio__slider .slick-arrow {
@@ -185,6 +219,12 @@
     background-color: rgba($white, 0.5);
     background-position: center;
     background-size: 30px 35px;
+  }
+
+  @media (max-width: $small) {
+    width: 35px;
+    height: 34px;
+    top: 29%;
   }
 }
 

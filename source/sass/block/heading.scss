@@ -21,7 +21,7 @@
   }
 
   &--about {
-    color: $white
+    color: $white;
   }
 
   &--tall {
@@ -36,5 +36,11 @@
   @media (max-width: $medium) {
     font-size: 31px;
     line-height: 37px;
+  }
+
+  @media (max-width: $small) {
+    font-size: 28px;
+    line-height: 34px;
+    padding-bottom: 21px;
   }
 }

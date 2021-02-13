@@ -65,6 +65,11 @@
     font-size: 19px;
     line-height: 31px;
   }
+
+  @media (max-width: $small) {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 .about__excerpt {
