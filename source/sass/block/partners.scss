@@ -82,6 +82,19 @@
     outline: none;
     transform: scale(1.2);
   }
+
+  @media (max-width: $large) {
+    @include size(27px, 40px);
+    top: 50%;
+    transform: translateY(-50%);
+    background-position: center;
+    background-size: cover;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2) translateY(-50%);
+    }
+  }
 }
 
 .partners__slider .slick-prev {
@@ -90,10 +103,10 @@
 
 .partners__slider .slick-next {
   right: 0;
-  transform: rotate(180deg);
+  transform: rotate(180deg)  translateY(50%);
 
   &:hover,
   &:focus {
-    transform: rotate(180deg) scale(1.2);
+    transform: rotate(180deg) scale(1.2)  translateY(50%);
   }
 }

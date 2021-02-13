@@ -34,12 +34,12 @@ $(document).ready(function () {
     slidesToShow: 4,
 
     responsive: [
-      /*   {
-           breakpoint: 1440,
-           settings: {
-             slidesToShow: 3,
-           },
-         },*/
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
       /* {
          breakpoint: 1110,
          settings: {
