@@ -27,4 +27,9 @@
   &--tall {
     padding-bottom: 18px;
   }
+
+  @media (max-width: $large) {
+    font-size: 35px;
+    line-height: 43px; //1.2
+  }
 }

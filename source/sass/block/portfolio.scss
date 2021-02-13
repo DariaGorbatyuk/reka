@@ -78,6 +78,11 @@
   color: $dark;
   margin-top: 0;
   margin-bottom: 11px;
+
+  @media (max-width: $large) {
+    font-size: 11px;
+    line-height: 14px;
+  }
 }
 
 .portfolio__size {
@@ -89,6 +94,11 @@
   text-transform: uppercase;
   color: $bright-gold;
   margin-left: 10px;
+
+  @media (max-width: $large) {
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 
 .portfolio__name {
@@ -101,6 +111,12 @@
   color: $dark;
   margin-top: 0;
   margin-bottom: 0;
+
+
+  @media (max-width: $large) {
+    font-size: 39px;
+    line-height: 49px;
+  }
 }
 
 .portfolio__slider .slick-arrow {
@@ -124,15 +140,21 @@
     outline: none;
     transform: scale(1.2);
   }
+
   @media (max-width: $large) {
+    @include size(38px, 45px);
     background-color: rgba($white, 0.5);
     background-position: center;
-    width: 50px;
+    background-size: 30px 35px;
   }
 }
 
 .portfolio__slider .slick-prev {
   left: 12%;
+
+  @media (max-width: $large) {
+    left: 10.6%;
+  }
 }
 
 .portfolio__slider .slick-next {
@@ -142,5 +164,9 @@
   &:hover,
   &:focus {
     transform: rotate(180deg) scale(1.2);
+  }
+
+  @media (max-width: $large) {
+    right: 10.6%;
   }
 }
