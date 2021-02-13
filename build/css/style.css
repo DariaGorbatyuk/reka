@@ -50,7 +50,9 @@
 /*
 my breakpoints
 1920
-1024
+1280
+768
+420
 */
 *,
 *::before,
@@ -492,7 +494,7 @@ input[type="checkbox"] {
     outline: none;
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
-  @media (max-width: 1440px) {
+  @media (max-width: 1280px) {
     .portfolio__slider .slick-arrow {
       background-color: rgba(255, 255, 255, 0.5);
       background-position: center;

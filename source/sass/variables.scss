@@ -3,18 +3,17 @@ $roboto: "Roboto", "Arial", sans-serif;
 $cg: "Cormorant Garamond", "Georgia", serif;
 
 //size
-$small: 420px;
+
+$giant: 1920px;
+$large: 1280px;
 $medium: 768px;
-$large: 1440px;
-
-$s-end: 767px;
-$m-end: 1023px;
-$l-end: 1920px;
-
+$small: 420px;
 /*
 my breakpoints
 1920
-1024
+1280
+768
+420
 */
 //colors
 $white: #ffffff;
@@ -26,11 +25,11 @@ $small: #7f8184;
 $bright-gray: #edece7;
 $light-gray: #dddcd7;
 $line: rgba(0, 0, 0, 0.14);
-$puce  : #818181;
+$puce: #818181;
 $gray: #8b8581;
 $dark-dray: #5f5d65;
 $brown-gray: #4b4a50;
-$graphite:  #4b4a50;
+$graphite: #4b4a50;
 $text: #3e3d3c;
 $dark: #131217;
 $black: #000000;
