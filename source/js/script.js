@@ -23,6 +23,15 @@ $(document).ready(function () {
     easing: 'ease',
     infinite: true,
     centerPadding: '13%',
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+    ],
     // variableWidth: true,
     /*   autoplay: true,
        autoplaySpeed: 3000*/
@@ -40,12 +49,12 @@ $(document).ready(function () {
           slidesToShow: 3,
         },
       },
-      /* {
-         breakpoint: 1110,
-         settings: {
-           slidesToShow: 2,
-         },
-       },*/
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
     ],
   });
 });

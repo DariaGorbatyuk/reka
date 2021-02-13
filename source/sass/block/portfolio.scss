@@ -4,12 +4,24 @@
   @media (max-width: $large) {
     padding-top: 80px;
   }
+
+  @media (max-width: $medium) {
+    padding-top: 65px;
+  }
 }
 
 .portfolio__heading {
   margin-top: 0;
   margin-left: 50px;
   margin-bottom: 63px;
+
+  @media (max-width: $medium) {
+    margin-left: 0;
+  }
+
+  @media (max-width: $medium) {
+    margin-bottom: 40px;
+  }
 }
 
 .portfolio__slider {
@@ -49,6 +61,10 @@
   list-style: none;
   max-width: 68.54%;
   padding: 0 0.5%;
+
+  @media (max-width: $medium) {
+    padding: 0 20px;
+  }
 }
 
 .portfolio__slider .slick-slide {
@@ -61,6 +77,10 @@
   display: block;
   margin: 0 auto;
   opacity: 0.5;
+
+  @media (max-width: $medium) {
+    opacity: 1;
+  }
 }
 
 .portfolio__slider .slick-center img {
@@ -87,6 +107,11 @@
     font-size: 11px;
     line-height: 14px;
   }
+
+  @media (max-width: $medium) {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 .portfolio__size {
@@ -102,6 +127,11 @@
   @media (max-width: $large) {
     font-size: 11px;
     line-height: 13px;
+  }
+
+  @media (max-width: $medium) {
+    font-size: 10px;
+    line-height: 12px;
   }
 }
 
@@ -120,6 +150,11 @@
   @media (max-width: $large) {
     font-size: 39px;
     line-height: 49px;
+  }
+
+  @media (max-width: $medium) {
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 
@@ -159,6 +194,10 @@
   @media (max-width: $large) {
     left: 10.6%;
   }
+
+  @media (max-width: $medium) {
+    left: 20px;
+  }
 }
 
 .portfolio__slider .slick-next {
@@ -172,5 +211,9 @@
 
   @media (max-width: $large) {
     right: 10.6%;
+  }
+
+  @media (max-width: $medium) {
+    right: 20px;
   }
 }

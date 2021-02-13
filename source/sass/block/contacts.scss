@@ -10,6 +10,11 @@
     padding-top: 80px;
     padding-bottom: 60px;
   }
+
+  @media (max-width: $medium) {
+    padding-top: 55px;
+    padding-bottom: 40px;
+  }
 }
 
 .contacts__heading {
@@ -34,6 +39,12 @@
   position: absolute;
   right: 25.5%;
   top: 134px;
+  box-shadow: 4px 4px 20px rgba($black, 0.1);
+
+  @media (max-width: $medium) {
+    right: 15.5%;
+    top: 200px;
+  }
 }
 
 .contacts__address {
@@ -61,11 +72,6 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
-
-  @media (max-width: $large) {
-    font-size: 15px;
-    line-height: 27px;
-  }
 }
 
 .contacts__city {

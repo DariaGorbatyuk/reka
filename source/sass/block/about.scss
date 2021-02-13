@@ -12,7 +12,7 @@
     max-width: 49%;
     min-width: 0;
     word-break: break-word;
-    padding: 151px 9.0% 180px 10.2%;
+    padding: 151px 9% 180px 10.2%;
   }
 
   &--r {
@@ -27,18 +27,30 @@
       padding: 110px 8% 90px 8.2%;
     }
   }
+
+  @media (max-width: $medium) {
+    min-width: 100%;
+
+    &--l {
+      padding: 70px 9% 69px 9.2%;
+    }
+  }
 }
 
 .about__heading {
   margin-top: 0;
   margin-bottom: 53px;
+
+  @media (max-width: $medium) {
+    margin-bottom: 40px;
+  }
 }
 
 .about__text {
   font-family: $roboto;
   font-weight: 300;
   font-size: 24px;
-  line-height: 36px; //1.5
+  line-height: 36px;
   color: $white;
   margin-top: 0;
   text-align: center;
@@ -46,7 +58,12 @@
 
   @media (max-width: $large) {
     font-size: 22px;
-    line-height: 36px; //1.2
+    line-height: 36px;
+  }
+
+  @media (max-width: $medium) {
+    font-size: 19px;
+    line-height: 31px;
   }
 }
 

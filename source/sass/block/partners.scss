@@ -1,11 +1,19 @@
 .partners {
   padding-top: 87px;
   padding-bottom: 80px;
+
+  @media (max-width: $medium) {
+    padding-top: 60px;
+  }
 }
 
 .partners__heading {
   margin-top: 0;
   margin-bottom: 70px;
+
+  @media (max-width: $medium) {
+    margin-bottom: 58px;
+  }
 }
 
 .partners__slider {

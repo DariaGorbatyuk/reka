@@ -32,4 +32,9 @@
     font-size: 35px;
     line-height: 43px; //1.2
   }
+
+  @media (max-width: $medium) {
+    font-size: 31px;
+    line-height: 37px;
+  }
 }

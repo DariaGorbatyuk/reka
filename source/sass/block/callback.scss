@@ -9,6 +9,11 @@
   @media (max-width: $large) {
     padding: 0 16.2% 0 16.56%;
   }
+
+  @media (max-width: $medium) {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 .callback__container-inp {
@@ -19,14 +24,19 @@
     margin-right: 0.7%;
   }
 
-/*  @media (max-width: $large) {
-    margin: 0 auto;
-    flex-basis: 443px;
+  @media (max-width: $medium) {
+    flex-basis: auto;
+    flex-grow: 1;
+    margin-bottom: 30px;
 
     &:first-child {
-      margin-right: auto;
+      margin-right: 0;
     }
-  }*/
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .callback__svg {
