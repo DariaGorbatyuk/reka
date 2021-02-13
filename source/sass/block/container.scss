@@ -21,4 +21,8 @@
   &--null {
     padding: 0;
   }
+
+  @media (max-width: $small) {
+    padding: 0 7%;
+  }
 }

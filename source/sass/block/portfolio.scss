@@ -14,7 +14,7 @@
 
   @media (max-width: $small) {
     padding-top: 48px;
-    padding-bottom: 46px;
+    padding-bottom: 48px;
   }
 }
 
@@ -93,6 +93,10 @@
   @media (max-width: $medium) {
     opacity: 1;
   }
+
+  @media (max-width: $small) {
+    max-height: 217px;
+  }
 }
 
 .portfolio__slider .slick-center img {
@@ -103,7 +107,7 @@
   margin-bottom: 34px;
 
   @media (max-width: $small) {
-    margin-bottom: 6px;
+    margin-bottom: 11px;
   }
 }
 
@@ -238,6 +242,10 @@
   @media (max-width: $medium) {
     left: 20px;
   }
+
+  @media (max-width: $small) {
+    left: 6.4%;
+  }
 }
 
 .portfolio__slider .slick-next {
@@ -255,5 +263,9 @@
 
   @media (max-width: $medium) {
     right: 20px;
+  }
+
+  @media (max-width: $small) {
+    right: 6.4%;
   }
 }

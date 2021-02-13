@@ -5,6 +5,11 @@
   @media (max-width: $medium) {
     padding-top: 60px;
   }
+
+  @media (max-width: $small) {
+    padding-top: 46px;
+    padding-bottom: 71px;
+  }
 }
 
 .partners__heading {
@@ -14,6 +19,10 @@
   @media (max-width: $medium) {
     margin-bottom: 58px;
   }
+
+  @media (max-width: $small) {
+    margin-bottom: 45px;
+  }
 }
 
 .partners__slider {
@@ -21,6 +30,10 @@
   position: relative;
   display: block;
   padding: 20px 33px 10px;
+
+  @media (max-width: $small) {
+    padding: 15px 33px 0px;
+  }
 }
 
 
@@ -102,6 +115,11 @@
     &:focus {
       transform: scale(1.2) translateY(-50%);
     }
+  }
+
+  @media (max-width: $small) {
+    width: 20px;
+    height: 21px;
   }
 }
 

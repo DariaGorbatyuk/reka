@@ -35,6 +35,16 @@
       padding: 70px 9% 69px 9.2%;
     }
   }
+
+  @media (max-width: $small) {
+    &--l {
+      padding: 51px 9% 58px 9.2%;
+    }
+
+    &--r {
+      max-height: 282px;
+    }
+  }
 }
 
 .about__heading {
@@ -43,6 +53,10 @@
 
   @media (max-width: $medium) {
     margin-bottom: 40px;
+  }
+
+  @media (max-width: $small) {
+    margin-bottom: 27px;
   }
 }
 
@@ -69,6 +83,7 @@
   @media (max-width: $small) {
     font-size: 16px;
     line-height: 28px;
+    margin-bottom: 32px;
   }
 }
 
