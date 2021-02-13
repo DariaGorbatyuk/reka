@@ -5,21 +5,35 @@
   position: relative;
   padding: 0 19.2% 0 19.56%;
   margin-bottom: 40px;
+
+  @media (max-width: $large) {
+    padding: 0 16.2% 0 16.56%;
+  }
 }
 
 .callback__container-inp {
   position: relative;
-  width: 47%;
+  flex: 0 0 47%;
 
   &:first-child {
-    width: 47.7%
+    margin-right: 0.7%;
   }
+
+/*  @media (max-width: $large) {
+    margin: 0 auto;
+    flex-basis: 443px;
+
+    &:first-child {
+      margin-right: auto;
+    }
+  }*/
 }
 
 .callback__svg {
   position: absolute;
   fill: $graphite;
-  top: 16%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .callback__inp {
@@ -35,12 +49,18 @@
   padding-bottom: 12px;
   padding-left: 38px;
   width: 100%;
+  padding-top: 10px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid $pure-gold;
+  }
 }
 
 .callback__container-check {
   text-align: center;
   margin-bottom: 27px;
-
 }
 
 .callback__check-label {
@@ -86,4 +106,9 @@
   margin: 0 auto;
   padding-top: 12px;
   padding-bottom: 10px;
+
+  @media (max-width: $large) {
+    font-size: 13px;
+    line-height: 30px;
+  }
 }
