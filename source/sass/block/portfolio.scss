@@ -89,6 +89,8 @@
   display: block;
   margin: 0 auto;
   opacity: 0.5;
+  transition-property: opacity;
+  transition-delay: 1000ms;
 
   @media (max-width: $medium) {
     opacity: 1;
@@ -223,6 +225,10 @@
     background-color: rgba($white, 0.5);
     background-position: center;
     background-size: 30px 35px;
+  }
+
+  @media (max-width: $medium) {
+    top: 35%;
   }
 
   @media (max-width: $small) {

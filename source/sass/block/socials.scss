@@ -9,6 +9,23 @@
   list-style: none;
 }
 
-.socials__link svg{
-  fill: $pale-gold;
+.socials__link {
+  &:focus {
+    outline: none;
+  }
+
+  svg {
+    fill: $pale-gold;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $bright-gold;
+    transition: all 200ms ease-in 50ms;
+  }
+
+  &:active svg {
+    fill: $bright-gold;
+    opacity: 0.8;
+  }
 }

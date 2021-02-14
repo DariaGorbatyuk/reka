@@ -33,7 +33,6 @@
       width: 83%;
       margin: 0 auto;
     }
-
   }
 }
 
@@ -41,6 +40,10 @@
   margin-right: auto;
   padding-right: 40px;
   padding-top: 4px;
+
+  &:focus {
+    outline: none;
+  }
 
   @media (max-width: $large) {
     padding-right: 0;
@@ -104,6 +107,7 @@
   &:hover,
   &:focus {
     color: $pure-gold;
+    outline: none;
   }
 
   &:active {
@@ -173,7 +177,8 @@
     &:nth-child(3n+2) {
       padding: 0;
     }
-    &:last-child{
+
+    &:last-child {
       margin-bottom: 0;
     }
   }

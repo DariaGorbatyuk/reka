@@ -41,6 +41,10 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+
+/*  &:focus {
+    outline: none;
+  }*/
 }
 
 a:not([href]) {
@@ -49,8 +53,4 @@ a:not([href]) {
 
 button {
   cursor: pointer;
-}
-
-svg {
-//  fill: currentColor;
 }

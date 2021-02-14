@@ -123,6 +123,12 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $pure-gold;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $bright-gold;
+  }
 }
 
 .contacts__socials {

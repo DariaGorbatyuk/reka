@@ -52,6 +52,7 @@
   position: absolute;
   fill: $graphite;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
 }
 
@@ -73,7 +74,13 @@
   &:hover,
   &:focus {
     outline: none;
-    border-bottom: 1px solid $pure-gold;
+    border-bottom: 1px solid $gold;
+  }
+
+  &:focus + .callback__svg {
+    fill: $gold;
+    transform: scale(1.1) translateY(-50%);
+    transition: transform 300ms ease-in;
   }
 }
 
@@ -101,18 +108,25 @@
   &::before {
     @include pseudo();
     @include square(25px);
-    background-color: $pale-gold;
+    background-color: transparent;
+    border: 2px solid $pale-gold;
     left: 0;
+    transition: background-color 300ms ease-in 100ms;
+  }
+
+  input:checked + &::before {
+    background-color: $pale-gold;
   }
 
   input:checked + &::after {
     @include pseudo();
+    @include size(14px, 10px);
     background-image: url("../img/check.svg");
     background-size: contain;
     background-repeat: no-repeat;
     left: 6px;
     top: 0;
-    @include size(14px, 10px);
+    animation: check 700ms ease-in;
   }
 
   @media (max-width: $small) {
@@ -146,6 +160,15 @@
   margin: 0 auto;
   padding-top: 12px;
   padding-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    transition: box-shadow 0.6s ease-in,
+    color 0.3s ease-in 0.3s;
+    box-shadow: inset 206px 0 0 0 $gold;
+    color: white;
+    outline: none;
+  }
 
   @media (max-width: $large) {
     font-size: 13px;

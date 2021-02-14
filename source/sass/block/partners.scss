@@ -29,10 +29,10 @@
   margin: 0;
   position: relative;
   display: block;
-  padding: 20px 33px 10px;
+  padding: 13px 33px 10px;
 
   @media (max-width: $small) {
-    padding: 15px 33px 0px;
+    padding: 10px 33px 0;
   }
 }
 
@@ -59,6 +59,7 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -67,7 +68,16 @@
   padding: 0 20px;
 }
 
-.portfolio__slider .slick-slide {
+.partners__slider .slick-slide {
+  &:hover,
+  &:focus {
+    outline: none;
+    transition: transform 300ms ease-in 100ms;
+    transform: scale(1.1);
+  }
+}
+
+.partners__link {
   &:focus {
     outline: none;
   }
@@ -129,10 +139,20 @@
 
 .partners__slider .slick-next {
   right: 0;
-  transform: rotate(180deg)  translateY(50%);
+  transform: rotate(180deg);
 
   &:hover,
   &:focus {
-    transform: rotate(180deg) scale(1.2)  translateY(50%);
+    transform: rotate(180deg) scale(1.2);
   }
+
+  @media (max-width: $large) {
+    transform: rotate(180deg) translateY(50%);
+
+    &:hover,
+    &:focus {
+      transform: rotate(180deg) scale(1.2) translateY(50%);
+    }
+  }
+
 }
