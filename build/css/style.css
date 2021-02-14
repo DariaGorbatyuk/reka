@@ -715,9 +715,6 @@ input[type="checkbox"] {
           flex: 1 1 0; }
   .about__column--l {
     background-color: #8b8581;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 0px;
-            flex: 1 1 0;
     max-width: 49%;
     min-width: 0;
     word-break: break-word;
@@ -805,7 +802,7 @@ input[type="checkbox"] {
 
 .partners {
   padding-top: 87px;
-  padding-bottom: 80px; }
+  padding-bottom: 89px; }
   @media (max-width: 768px) {
     .partners {
       padding-top: 60px; } }
