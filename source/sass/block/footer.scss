@@ -133,6 +133,18 @@
   align-items: center;
   padding-right: 7px;
 
+  a {
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $pure-gold;
+    }
+
+    &:active {
+      color: $bright-gold;
+    }
+  }
+
   @media (max-width: $large) {
     font-size: 13px;
     line-height: 15px;
@@ -149,15 +161,18 @@
 }
 
 .footer__bottom-item {
-  flex: 0 1 33%;
+  &:nth-child(3n+1) {
+    padding-right: 10px;
+  }
 
   &:nth-child(3n+2) {
     text-align: center;
-    padding-left: 6.5%;
+    padding-left: 7.5%;
   }
 
   &:nth-child(3n+3) {
     text-align: right;
+    padding-left: 10px;
   }
 
   @media (max-width: $large) {
@@ -174,7 +189,7 @@
     text-align: center;
     margin-bottom: 20px;
 
-    &:nth-child(3n+2) {
+    &:nth-child(n) {
       padding: 0;
     }
 
