@@ -6,6 +6,16 @@
     padding-bottom: 230px;
     padding-top: 130px;
   }
+
+
+  @media (max-width: $medium) {
+    .header--open &{
+      display: none;
+    }
+    .header--closed &{
+      padding-top: 175px;
+    }
+  }
 }
 
 .promo__slogan {
@@ -20,6 +30,7 @@
   text-shadow: 0 4px 10px rgba($black, 0.5);
   text-align: center;
   margin-bottom: 47px;
+  margin-top: 0;
 
   @media (max-width: $large) {
     font-size: 18px;
@@ -27,8 +38,9 @@
   }
 
   @media (max-width: $medium) {
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 38px;
   }
 }
 
@@ -47,8 +59,8 @@
   position: relative;
 
   &--top {
-    margin-bottom: 19px;
-    padding-bottom: 29px;
+    margin-bottom: 15px;
+    padding-bottom: 17px;
 
     &::after {
       @include pseudo();
@@ -67,8 +79,9 @@
   }
 
   @media (max-width: $medium) {
-    font-size: 35px;
-    line-height: 42px;
-    letter-spacing: 4px;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 1.5px;
+    margin-left: 14px;
   }
 }
