@@ -165,7 +165,6 @@
     .header--closed & {
       display: block;
       position: absolute;
-      font-size: 0;
       width: 32px;
       height: 22px;
       bottom: 0;
@@ -173,11 +172,37 @@
       transform: translateY(-50%);
       top: 41px;
       right: 27px;
+      background-color: transparent;
+    }
+
+    .header--closed & span {
+      width: 24px;
+      height: 2px;
+      background-color: $header-icon;
+      position: absolute;
+      right: 0;
+
+      &::before,
+      &::after {
+        @include pseudo();
+        height: 2px;
+        background-color: $header-icon;
+        right: 0;
+      }
+
+      &::before {
+        width: 21px;
+        top: -10px;
+      }
+
+      &::after {
+        width: 29px;
+        top: 8px;
+      }
     }
 
     .header--open & {
       display: block;
-      font-size: 0;
       width: 30px;
       height: 30px;
       position: absolute;

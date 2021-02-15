@@ -346,7 +346,6 @@ button {
     .header--closed .header__nav-toggle {
       display: block;
       position: absolute;
-      font-size: 0;
       width: 32px;
       height: 22px;
       bottom: 0;
@@ -354,10 +353,29 @@ button {
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
       top: 41px;
-      right: 27px; }
+      right: 27px;
+      background-color: transparent; }
+    .header--closed .header__nav-toggle span {
+      width: 24px;
+      height: 2px;
+      background-color: #b1afa9;
+      position: absolute;
+      right: 0; }
+      .header--closed .header__nav-toggle span::before, .header--closed .header__nav-toggle span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        background-color: #b1afa9;
+        right: 0; }
+      .header--closed .header__nav-toggle span::before {
+        width: 21px;
+        top: -10px; }
+      .header--closed .header__nav-toggle span::after {
+        width: 29px;
+        top: 8px; }
     .header--open .header__nav-toggle {
       display: block;
-      font-size: 0;
       width: 30px;
       height: 30px;
       position: absolute;
