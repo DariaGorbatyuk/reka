@@ -1,0 +1,48 @@
+.promo {
+  padding-bottom: 259px;
+  padding-top: 145px;
+}
+
+.promo__slogan {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: $white;
+  text-shadow: 0 4px 10px rgba($black, 0.5);
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.promo__heading {
+  font-family: $cg;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50.9091px;
+  line-height: 62px;
+  text-align: center;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  color: $header-heading;
+  margin-top: 0;
+  margin-left: 25px;
+  position: relative;
+
+  &--top {
+    margin-bottom: 19px;
+    padding-bottom: 29px;
+
+    &::after {
+      @include pseudo();
+      width: 99px;
+      height: 1px;
+      background-color: $gold;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-64%);
+    }
+  }
+}

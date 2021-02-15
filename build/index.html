@@ -8,61 +8,69 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<!--<header class="header">
+<header class="header">
   <div class="container  container--middle">
-    <div class="header__top">
-      <a href="#">
-        <svg class="logo" width="272" height="28" role="img" aria-label="StudioKora">
-          <use xlink:href="img/sprite.svg#icon-logo"></use>
-        </svg>
-      </a>
-      <nav class="header__nav">
-        <button class="header__nav-toggle close" type="button">Открыть/закрыть меню</button>
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="#" class="header__nav-link">О компании</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Архитектура</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Дизайн интерьера</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Галерея</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Сотрудничество</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
-        </ul>
-        <a href="tel:+78126459810">+7 (812) 645 98 10</a>
-        <div class="header__nav-bottom">
-          <address>Санкт-петербург, ул. зверинская 33, офис 13</address>
-          <ul class="header__socials socials">
-            <li class="socials__item">
-              <a href="#" class="socials__link" aria-label="Мы в facebook">
-                <svg width="33" height="32" role="img">
-                  <use xlink:href="img/sprite.svg#icon-f"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link" aria-label="Мы на YouTube">
-                <svg width="33" height="32" role="img">
-                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link">
-                <svg width="33" height="32" role="img" aria-label="Мы в instagram">
-                  <use xlink:href="img/sprite.svg#icon-inst"></use>
-                </svg>
-              </a>
-            </li>
+    <div class="header__container-top">
+      <div class="header__top">
+        <a class="header__logo">
+          <svg width="272" height="28" role="img" aria-label="StudioKora">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="header__nav">
+          <button class="header__nav-toggle close" type="button">Открыть/закрыть меню</button>
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#" class="header__nav-link">О компании</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Архитектура</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Дизайн интерьера</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Галерея</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Сотрудничество</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
           </ul>
-        </div>
-      </nav>
+          <a class="header__tel" href="tel:+78126459810">+7 (812) 645 98 10</a>
+          <div class="header__nav-bottom">
+            <address>Санкт-петербург, ул. зверинская 33, офис 13</address>
+            <ul class="header__socials socials">
+              <li class="socials__item">
+                <a href="#" class="socials__link" aria-label="Мы в facebook">
+                  <svg width="33" height="32" role="img">
+                    <use xlink:href="img/sprite.svg#icon-f"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link" aria-label="Мы на YouTube">
+                  <svg width="33" height="32" role="img">
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg width="33" height="32" role="img" aria-label="Мы в instagram">
+                    <use xlink:href="img/sprite.svg#icon-inst"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
     <section class="promo">
       <p class="promo__slogan">Меняем качество жизни</p>
       <h1 class="visually-hidden">Студия Кора: архитектура, дизайн интерьера</h1>
-      <p class="promo__heading-t">Архитектура</p>
-      <p class="promo__heading-b">дизайн интерьера</p>
+      <p class="promo__heading promo__heading--top">Архитектура</p>
+      <p class="promo__heading promo__heading--bottom">дизайн интерьера</p>
     </section>
+    <div class="header__slider-btn-container">
+      <button class="header__slider-btn" type="button" data-img="1"></button>
+      <button class="header__slider-btn" type="button" data-img="2"></button>
+      <button class="header__slider-btn" type="button" data-img="3"></button>
+      <button class="header__slider-btn" type="button" data-img="4"></button>
+    </div>
   </div>
-</header>-->
+</header>
 <main class="main">
   <!-- <section class="directions">
      <div class="container container&#45;&#45;big">
@@ -109,8 +117,8 @@
        </div>
      </div>
    </section>-->
-  <section class="main__portfolio portfolio">
-    <div class="container container--big">
+  <!--<section class="main__portfolio portfolio">
+    <div class="container container&#45;&#45;big">
       <h2 class="portfolio__heading heading">проекты</h2>
     </div>
     <ul class="portfolio__slider">
@@ -144,57 +152,62 @@
     </ul>
   </section>
   <section class="about">
-    <div class="about__column about__column--l">
-      <h2 class="about__heading heading heading--about">о компании</h2>
+    <div class="about__column about__column&#45;&#45;l">
+      <h2 class="about__heading heading heading&#45;&#45;about">о компании</h2>
       <p class="about__text">Studiokora – это гармония архитектуры и дизайна интерьера. Мы создаём масштабные проекты и
         продумываем до
         мелочей
         окружение и пространство. Учитываем стиль жизни и характер каждого клиента.</p>
       <a class="about__excerpt" href="#">подробнее</a>
     </div>
-    <div class="about__column about__column--r">
+    <div class="about__column about__column&#45;&#45;r">
       <img class="about__img" src="./img/about.jpg" alt="Просторная спальная комната в светло-серых тонах" width="100%">
     </div>
   </section>
   <section class="partners">
-    <div class="container container--small">
-      <h2 class="partners__heading heading heading--tall">наши партнеры</h2>
+    <div class="container container&#45;&#45;small">
+      <h2 class="partners__heading heading heading&#45;&#45;tall">наши партнеры</h2>
       <ul class="partners__slider">
         <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p1.svg" alt="Importhome"></a>
         </li>
-        <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p2.svg" alt="Интерьеры экстра класса"></a></li>
-        <li class="partners__item"><a class="partners__link" href="#"><img class="partners__img" src="./img/icon-p3.svg" alt="Manders - английский декор стен"></a>
+        <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p2.svg"
+                                                                           alt="Интерьеры экстра класса"></a></li>
+        <li class="partners__item"><a class="partners__link" href="#"><img class="partners__img"
+                                                                           src="./img/icon-p3.svg"
+                                                                           alt="Manders - английский декор стен"></a>
         </li>
-        <li class="partners__item"><a class="partners__link" href="#"><img class="partners__img" src="./img/icon-p4.svg" alt="СЭТКОМ"></a>
+        <li class="partners__item"><a class="partners__link" href="#"><img class="partners__img"
+                                                                           src="./img/icon-p4.svg" alt="СЭТКОМ"></a>
         </li>
-        <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p2.svg" alt="Интерьеры экстра класса"></a></li>
+        <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p2.svg"
+                                                                           alt="Интерьеры экстра класса"></a></li>
       </ul>
     </div>
   </section>
   <section class="contacts">
-    <div class="container container--small">
+    <div class="container container&#45;&#45;small">
       <div class="contacts__top">
-        <h2 class="contacts__heading heading heading--contact">Контакты</h2>
+        <h2 class="contacts__heading heading heading&#45;&#45;contact">Контакты</h2>
         <p class="contacts__text">Оставьте заявку и мы вам перезвоним!</p>
         <form class="contacts__callback callback" action="#" method="post" name="callback">
           <div class="callback__container-inputs">
             <div class="callback__container-inp">
               <label class="visually-hidden" for="name">Ваше имя</label>
-              <input class="callback__inp callback__inp--name" id="name" type="text" placeholder="Ваше имя" required="">
+              <input class="callback__inp callback__inp&#45;&#45;name" id="name" type="text" placeholder="Ваше имя" required>
               <svg class="callback__svg" width="18" height="18" role="img">
                 <use xlink:href="img/sprite.svg#icon-login"></use>
               </svg>
             </div>
             <div class="callback__container-inp">
               <label class="visually-hidden" for="tel">Телефон</label>
-              <input class="callback__inp callback__inp--tel" id="tel" type="tel" placeholder="Телефон" required="">
+              <input class="callback__inp callback__inp&#45;&#45;tel" id="tel" type="tel" placeholder="Телефон" required>
               <svg class="callback__svg" width="18" height="18" role="img">
                 <use xlink:href="img/sprite.svg#icon-tel"></use>
               </svg>
             </div>
           </div>
           <div class="callback__container-check">
-            <input id="agree" type="checkbox" checked="">
+            <input id="agree" type="checkbox" checked>
             <label class="callback__check-label" for="agree">Я даю согласие на обработку персональных данных</label>
           </div>
           <button class="callback__btn" type="submit">оставить заявку</button>
@@ -232,10 +245,10 @@
         </ul>
       </div>
     </div>
-  </section>
+  </section>-->
 </main>
-<footer class="footer">
-  <div class="container container--small">
+<!--<footer class="footer">
+  <div class="container container&#45;&#45;small">
     <div class="footer__top">
       <a class="footer__logo logo">
         <svg class="footer__logo-svg" width="272" height="28" role="img" aria-label="StudioKora">
@@ -259,7 +272,7 @@
       <a class="footer__bottom-item" href="https://rekastudio.ru/">REKA Digital Agency</a>
     </div>
   </div>
-</footer>
+</footer>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
