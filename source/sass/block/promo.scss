@@ -1,6 +1,11 @@
 .promo {
   padding-bottom: 259px;
   padding-top: 145px;
+
+  @media (max-width: $large) {
+    padding-bottom: 230px;
+    padding-top: 130px;
+  }
 }
 
 .promo__slogan {
@@ -15,6 +20,11 @@
   text-shadow: 0 4px 10px rgba($black, 0.5);
   text-align: center;
   margin-bottom: 47px;
+
+  @media (max-width: $large) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .promo__heading {
@@ -30,6 +40,11 @@
   margin-top: 0;
   margin-left: 25px;
   position: relative;
+
+  @media (max-width: $large) {
+    font-size: 48px;
+    line-height: 60px;
+  }
 
   &--top {
     margin-bottom: 19px;
