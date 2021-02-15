@@ -25,6 +25,11 @@
     font-size: 18px;
     line-height: 22px;
   }
+
+  @media (max-width: $medium) {
+    font-size: 13px;
+    line-height: 15px;
+  }
 }
 
 .promo__heading {
@@ -41,11 +46,6 @@
   margin-left: 25px;
   position: relative;
 
-  @media (max-width: $large) {
-    font-size: 48px;
-    line-height: 60px;
-  }
-
   &--top {
     margin-bottom: 19px;
     padding-bottom: 29px;
@@ -59,5 +59,16 @@
       left: 50%;
       transform: translateX(-64%);
     }
+  }
+
+  @media (max-width: $large) {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  @media (max-width: $medium) {
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 4px;
   }
 }

@@ -40,6 +40,10 @@
 
 .header__container-top {
   padding-top: 53px;
+
+  @media (max-width: $medium) {
+    padding-top: 11px;
+  }
 }
 
 .header__top {
@@ -48,6 +52,21 @@
   align-items: center;
   padding-top: 31px;
   padding-bottom: 21px;
+  position: relative;
+
+  @media (max-width: $medium) {
+    .header--closed & {
+      padding-bottom: 30px;
+
+      &::after {
+        @include pseudo();
+        width: 100%;
+        height: 1px;
+        background-color: rgba($white, 0.15);
+        bottom: 0;
+      }
+    }
+  }
 }
 
 .header__logo {
@@ -55,10 +74,25 @@
   padding-right: 10px;
   align-self: flex-start;
   padding-bottom: 10px;
+
+  @media (max-width: $medium) {
+    margin: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
 }
 
 .header__logo svg {
   fill: $header-icon;
+
+  @media (max-width: $medium) {
+    width: 183px;
+    height: 19px;
+  }
 }
 
 .header__nav {
@@ -71,10 +105,32 @@
   @media (max-width: $large) {
     flex-wrap: nowrap;
   }
+
+  @media (max-width: $medium) {
+    display: block;
+    position: relative;
+    margin-top: 0;
+  }
 }
 
 .header__nav-toggle {
   display: none;
+  border: 0;
+
+  @media (max-width: $medium) {
+    .header--closed & {
+      display: block;
+      position: absolute;
+      font-size: 0;
+      width: 29px;
+      height: 20px;
+      bottom: 0;
+      padding: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .header__nav-list {
@@ -90,7 +146,14 @@
   @media (max-width: $large) {
     justify-content: flex-start;
   }
+
+  @media (max-width: $medium) {
+    .header--closed & {
+      display: none;
+    }
+  }
 }
+
 
 .header__nav-item {
   list-style: none;
@@ -110,6 +173,12 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: inherit;
+
+  @media (max-width: $medium) {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1.55422px;
+  }
 }
 
 .header__tel {
@@ -127,6 +196,12 @@
 
   @media (max-width: $large) {
     align-self: flex-start;
+  }
+  @media (max-width: $medium) {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
