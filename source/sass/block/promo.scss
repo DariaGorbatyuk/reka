@@ -1,6 +1,6 @@
 .promo {
-  padding-bottom: 259px;
-  padding-top: 145px;
+  padding-bottom: 310px;
+  padding-top: 165px;
 
   @media (max-width: $large) {
     padding-bottom: 230px;
@@ -73,8 +73,8 @@
   position: relative;
 
   &--top {
-    margin-bottom: 15px;
-    padding-bottom: 17px;
+    margin-bottom: 18px;
+    padding-bottom: 30px;
 
     &::after {
       @include pseudo();
@@ -85,6 +85,9 @@
       left: 50%;
       transform: translateX(-64%);
     }
+  }
+  &--bottom{
+    margin-bottom: 0;
   }
 
   @media (max-width: $large) {

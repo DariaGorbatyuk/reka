@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="header header--open">
+<header class="header header--closed">
   <!--  header--closed  header--no-js  header--open-->
   <div class="container  container--header">
     <div class="header__container-top">
@@ -18,7 +18,7 @@
             <use xlink:href="img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
-        <button class="header__nav-toggle close" type="button" aria-label="Открыть/закрыть меню"><span></span></button>
+        <button class="header__nav-toggle" type="button" aria-label="Открыть/закрыть меню"><span></span></button>
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item"><a href="#" class="header__nav-link">О компании</a></li>
@@ -69,7 +69,7 @@
       <p class="promo__heading promo__heading--bottom">дизайн интерьера</p>
     </section>
     <div class="header__slider-btn-container">
-      <button class="header__slider-btn" type="button" data-img="1"></button>
+      <button class="header__slider-btn header__slider-btn--active" type="button" data-img="1"></button>
       <button class="header__slider-btn" type="button" data-img="2"></button>
       <button class="header__slider-btn" type="button" data-img="3"></button>
       <button class="header__slider-btn" type="button" data-img="4"></button>
@@ -252,8 +252,8 @@
     </div>
   </section>
 </main>
-<!--<footer class="footer">
-  <div class="container container&#45;&#45;small">
+<footer class="footer">
+  <div class="container container--small">
     <div class="footer__top">
       <a class="footer__logo logo">
         <svg class="footer__logo-svg" width="272" height="28" role="img" aria-label="StudioKora">
@@ -277,7 +277,7 @@
       <a class="footer__bottom-item" href="https://rekastudio.ru/">REKA Digital Agency</a>
     </div>
   </div>
-</footer>-->
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
