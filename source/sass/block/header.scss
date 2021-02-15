@@ -162,6 +162,12 @@
   border: 0;
 
   @media (max-width: $medium) {
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+
     .header--closed & {
       display: block;
       position: absolute;
@@ -172,7 +178,6 @@
       transform: translateY(-50%);
       top: 41px;
       right: 27px;
-      background-color: transparent;
     }
 
     .header--closed & span {
@@ -210,6 +215,26 @@
       padding: 0;
       border: 0;
       top: 27px;
+    }
+    .header--open & span {
+      @include size(0, 0);
+      position: absolute;
+
+      &::before,
+      &::after {
+        @include pseudo();
+        @include size(29px, 2px);
+        background-color: $address;
+        right: -14px;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
     }
   }
 }
