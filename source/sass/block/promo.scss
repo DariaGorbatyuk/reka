@@ -9,11 +9,17 @@
 
 
   @media (max-width: $medium) {
-    .header--open &{
+    .header--open & {
       display: none;
     }
-    .header--closed &{
+    .header--closed & {
       padding-top: 175px;
+    }
+    .header--no-js & {
+      background-image: linear-gradient(180deg, $header-gradient 0%, rgba($header-gradient-dark, 0) 34.54%),
+      linear-gradient(0deg, rgba($header-gradient-dark, 0.6), rgba($header-gradient-dark, 0.6)),
+      url("../img/img-slider-1.jpg");
+      padding-bottom: 200px;
     }
   }
 }

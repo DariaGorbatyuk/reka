@@ -8,21 +8,30 @@
     //padding: 0 30px;
   }
 
-  &--middle {
+  &--middle,
+  &--header {
     padding: 0 4.95%;
-    //padding: 0 95px;
   }
 
   &--small {
     padding: 0 10.26%;
-    //padding: 0 197px;
   }
 
   &--null {
     padding: 0;
   }
 
+  @media (max-width: $medium) {
+    &--header {
+      padding: 0;
+    }
+  }
+
   @media (max-width: $small) {
     padding: 0 7%;
+
+    &--header {
+      padding: 0;
+    }
   }
 }

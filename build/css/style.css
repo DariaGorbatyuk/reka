@@ -150,15 +150,20 @@ button {
   margin: 0 auto; }
   .container--big {
     padding: 0 1.56%; }
-  .container--middle {
+  .container--middle, .container--header {
     padding: 0 4.95%; }
   .container--small {
     padding: 0 10.26%; }
   .container--null {
     padding: 0; }
+  @media (max-width: 768px) {
+    .container--header {
+      padding: 0; } }
   @media (max-width: 420px) {
     .container {
-      padding: 0 7%; } }
+      padding: 0 7%; }
+      .container--header {
+        padding: 0; } }
 
 .heading {
   font-family: "Cormorant Garamond", "Georgia", serif;
@@ -239,6 +244,8 @@ button {
     .header--open {
       padding-bottom: 0;
       background-color: #e5e5e5;
+      background-image: none; }
+    .header--no-js {
       background-image: none; } }
 
 .header__container-top {
@@ -248,6 +255,9 @@ button {
       padding-top: 11px; }
       .header--open .header__container-top {
         height: 100%;
+        padding-bottom: 38px; }
+      .header--no-js .header__container-top {
+        padding-top: 0;
         padding-bottom: 38px; } }
 
 .header__top {
@@ -276,7 +286,8 @@ button {
           height: 1px;
           background-color: rgba(255, 255, 255, 0.15);
           bottom: 0; }
-      .header--open .header__top {
+      .header--open .header__top,
+      .header--no-js .header__top {
         padding-bottom: 0; } }
 
 .header__logo {
@@ -294,7 +305,8 @@ button {
       .header--closed .header__logo {
         padding-bottom: 0;
         margin: 0 0 0 15px; }
-      .header--open .header__logo {
+      .header--open .header__logo,
+      .header--no-js .header__logo {
         padding-bottom: 24px;
         margin: 0 0 130px 15px; } }
 
@@ -307,23 +319,20 @@ button {
       .header--open .header__logo svg {
         fill: #131217; } }
 
-.header__nav {
-  /* display: flex;
-   align-items: center;
-   margin-top: 2px;
-   flex: 1 1 auto;*/ }
-  @media (max-width: 1280px) {
-    .header__nav {
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; } }
-  @media (max-width: 768px) {
-    .header__nav {
-      display: block;
-      position: relative;
-      margin-top: 0;
-      width: 100%; }
-      .header--open .header__nav {
-        margin-bottom: 132px; } }
+@media (max-width: 1280px) {
+  .header__nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; } }
+
+@media (max-width: 768px) {
+  .header__nav {
+    display: block;
+    position: relative;
+    margin-top: 0;
+    width: 100%; }
+    .header--open .header__nav,
+    .header__nav .header--no-js {
+      margin-bottom: 132px; } }
 
 .header__nav-toggle {
   display: none;
@@ -378,7 +387,8 @@ button {
   @media (max-width: 768px) {
     .header--closed .header__nav-list {
       display: none; }
-    .header--open .header__nav-list {
+    .header--open .header__nav-list,
+    .header--no-js .header__nav-list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -393,11 +403,13 @@ button {
   .header__nav-item:first-child {
     margin-left: 0; }
   @media (max-width: 768px) {
-    .header--open .header__nav-item {
+    .header--open .header__nav-item,
+    .header--no-js .header__nav-item {
       margin-bottom: 24px;
       margin-left: 0;
       width: 100%; }
-      .header--open .header__nav-item:last-child {
+      .header--open .header__nav-item:last-child,
+      .header--no-js .header__nav-item:last-child {
         margin-left: 0; } }
 
 .header__nav-link {
@@ -415,7 +427,8 @@ button {
       line-height: 21px;
       letter-spacing: 1.55422px;
       color: #757470; }
-      .header--open .header__nav-link {
+      .header--open .header__nav-link,
+      .header--no-js .header__nav-link {
         display: block;
         padding: 10px 0;
         width: 100%;
@@ -444,7 +457,9 @@ button {
     .header__tel {
       position: absolute;
       top: 29px;
-      left: -16px; } }
+      left: -16px; }
+      .header--no-js .header__tel {
+        left: 30px; } }
 
 .header__tel-svg {
   display: none; }
@@ -517,7 +532,11 @@ button {
     .header--open .promo {
       display: none; }
     .header--closed .promo {
-      padding-top: 175px; } }
+      padding-top: 175px; }
+    .header--no-js .promo {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#1a1919), color-stop(34.54%, rgba(25, 25, 25, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(25, 25, 25, 0.6)), to(rgba(25, 25, 25, 0.6))), url("../img/img-slider-1.jpg");
+      background-image: linear-gradient(180deg, #1a1919 0%, rgba(25, 25, 25, 0) 34.54%), linear-gradient(0deg, rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)), url("../img/img-slider-1.jpg");
+      padding-bottom: 200px; } }
 
 .promo__slogan {
   font-family: "Roboto", "Arial", sans-serif;
