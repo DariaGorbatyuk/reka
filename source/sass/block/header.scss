@@ -88,6 +88,15 @@
     .header--open &,
     .header--no-js & {
       padding-bottom: 0;
+      position: relative;
+
+      &::before {
+        @include pseudo();
+        top: 74px;
+        width: 86%;
+        height: 1px;
+        background-color: rgba($address, 0.2);
+      }
     }
     .header--no-js & {
       background-color: $white-gray;
@@ -127,7 +136,8 @@
     width: 183px;
     height: 19px;
 
-    .header--open & {
+    .header--open &,
+    .header--no-js & {
       fill: $dark;
     }
   }
