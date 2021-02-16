@@ -38,11 +38,11 @@ function onScroll() {
     menu.classList.remove('header__top--slider-white');
     menu.classList.remove('header__top--slider-dark');
   }
-  if (window.pageYOffset > 90 && window.pageYOffset < 750) {
+  if (window.pageYOffset > 90 && window.pageYOffset < 700) {
     menu.classList.remove('header__top--slider-white');
     menu.classList.add('header__top--slider-dark');
 
-  } else if (window.pageYOffset >= 750) {
+  } else if (window.pageYOffset > 700) {
     menu.classList.remove('header__top--slider-dark');
     menu.classList.add('header__top--slider-white');
   }
