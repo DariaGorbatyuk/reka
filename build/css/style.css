@@ -171,6 +171,9 @@ button {
       .container--header {
         padding: 0; } }
 
+.overflow {
+  overflow-y: hidden; }
+
 .heading {
   font-family: "Cormorant Garamond", "Georgia", serif;
   font-style: normal;

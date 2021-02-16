@@ -1,18 +1,38 @@
 'use strict';
 var pageHeader = document.querySelector('.header');
-var headerToggle = document.querySelector('.header__nav-toggle');
+var headerToggle = pageHeader.querySelector('.header__nav-toggle');
+var body = document.querySelector('body');
 
 pageHeader.classList.remove('header--no-js');
+pageHeader.classList.add('header--closed');
+
+function closeHeader() {
+  pageHeader.classList.add('header--closed');
+  pageHeader.classList.remove('header--open');
+  body.classList.remove('overflow');
+}
+
+function openHeader() {
+  pageHeader.classList.remove('header--closed');
+  pageHeader.classList.add('header--open');
+  body.classList.add('overflow');
+}
 
 headerToggle.addEventListener('click', function () {
   if (pageHeader.classList.contains('header--closed')) {
-    pageHeader.classList.remove('header--closed');
-    pageHeader.classList.add('header--open');
+    openHeader();
   } else {
-    pageHeader.classList.add('header--closed');
-    pageHeader.classList.remove('header--open');
+    closeHeader();
   }
 });
+pageHeader.addEventListener('click', function (evt) {
+  if (pageHeader.classList.contains('header--closed') || !evt.target.classList.contains('header__nav-link')) {
+    return;
+  }
+  closeHeader();
+});
+
+
 $(document).ready(function () {
   $('.portfolio__slider').slick({
     centerMode: true,
