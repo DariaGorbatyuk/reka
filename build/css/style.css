@@ -303,7 +303,8 @@ button {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      position: relative; }
       .header--closed .header__top {
         padding-bottom: 21px; }
         .header--closed .header__top::after {

@@ -117,6 +117,7 @@
 
   @media (max-width: $medium) {
     flex-direction: column;
+    position: relative;
 
     .header--closed & {
       padding-bottom: 21px;

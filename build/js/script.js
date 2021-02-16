@@ -22,6 +22,9 @@ function openHeader() {
 }
 
 function onScroll() {
+  if (document.documentElement.clientWidth < 768) {
+    return;
+  }
   if (window.pageYOffset < 90) {
     menu.classList.remove('header__top--slider-white');
     menu.classList.remove('header__top--slider-dark');
