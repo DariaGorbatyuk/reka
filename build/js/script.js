@@ -1,7 +1,7 @@
 'use strict';
 var pageHeader = document.querySelector('.header');
 var headerToggle = pageHeader.querySelector('.header__nav-toggle');
-var body = document.querySelector('body');
+var html = document.querySelector('html');
 
 pageHeader.classList.remove('header--no-js');
 pageHeader.classList.add('header--closed');
@@ -9,13 +9,13 @@ pageHeader.classList.add('header--closed');
 function closeHeader() {
   pageHeader.classList.add('header--closed');
   pageHeader.classList.remove('header--open');
-  body.classList.remove('overflow');
+  html.classList.remove('overflow');
 }
 
 function openHeader() {
   pageHeader.classList.remove('header--closed');
   pageHeader.classList.add('header--open');
-  body.classList.add('overflow');
+  html.classList.add('overflow');
 }
 
 headerToggle.addEventListener('click', function () {
@@ -31,6 +31,7 @@ pageHeader.addEventListener('click', function (evt) {
   }
   closeHeader();
 });
+
 
 
 $(document).ready(function () {

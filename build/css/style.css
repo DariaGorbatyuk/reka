@@ -63,7 +63,9 @@ my breakpoints
 html {
   height: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  overflow-y: scroll;
+  scroll-behavior: smooth; }
 
 body {
   margin: 0 auto;
