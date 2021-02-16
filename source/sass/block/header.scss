@@ -66,9 +66,30 @@
 .header__top {
   display: flex;
   align-items: center;
-  padding-top: 31px;
-  padding-bottom: 21px;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  padding: 31px 4.95% 18px;
+
+  &--slider-dark {
+    background-color: $header-gradient;
+    top: 0;
+  }
+
+  &--slider-white {
+    background-color: $white;
+    top: 0;
+
+    .header__logo svg {
+      fill: $dark;
+    }
+
+    .header__nav-link,
+    .header__tel {
+      color: $dark;
+    }
+  }
 
   @media (max-width: $medium) {
     flex-direction: column;
@@ -106,7 +127,7 @@
 }
 
 .header__logo {
-  margin-right: 8.9%;
+  margin-right: auto;
   padding-right: 10px;
   align-self: flex-start;
   padding-bottom: 10px;
@@ -253,13 +274,9 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content: flex-end;
   flex: 1 1 auto;
   max-width: 868px;
-
-  @media (max-width: $large) {
-    justify-content: flex-end;
-  }
 
   @media (max-width: $medium) {
     justify-content: flex-start;
@@ -307,11 +324,30 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: inherit;
+  padding-bottom: 7px;
+  position: relative;
+
+  &::after {
+    @include pseudo();
+    width: 0;
+    height: 1px;
+    background-color: $pure-gold;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   &:focus,
   &:hover {
     outline: none;
     color: $pure-gold;
+    transition: all 400ms ease-in 50ms;
+
+    &::after {
+      @include pseudo();
+      width: 100%;
+      transition: width 400ms ease-in 50ms;
+    }
   }
 
   @media (max-width: $medium) {

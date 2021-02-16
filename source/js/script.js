@@ -2,6 +2,7 @@
 var pageHeader = document.querySelector('.header');
 var headerToggle = pageHeader.querySelector('.header__nav-toggle');
 var html = document.querySelector('html');
+var menu = pageHeader.querySelector('.header__top');
 
 pageHeader.classList.remove('header--no-js');
 pageHeader.classList.add('header--closed');
@@ -32,7 +33,22 @@ pageHeader.addEventListener('click', function (evt) {
   closeHeader();
 });
 
+function onScroll() {
+  if (window.pageYOffset < 90) {
+    menu.classList.remove('header__top--slider-white');
+    menu.classList.remove('header__top--slider-dark');
+  }
+  if (window.pageYOffset > 90 && window.pageYOffset < 750) {
+    menu.classList.remove('header__top--slider-white');
+    menu.classList.add('header__top--slider-dark');
 
+  } else if (window.pageYOffset >= 750) {
+    menu.classList.remove('header__top--slider-dark');
+    menu.classList.add('header__top--slider-white');
+  }
+}
+
+window.addEventListener('scroll', onScroll);
 
 $(document).ready(function () {
   $('.portfolio__slider').slick({
@@ -51,7 +67,6 @@ $(document).ready(function () {
         },
       },
     ],
-    // variableWidth: true,
     /*   autoplay: true,
        autoplaySpeed: 3000*/
   });
