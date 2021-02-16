@@ -1,10 +1,10 @@
 .promo {
   padding-bottom: 310px;
-  padding-top: 165px;
+  padding-top: 259px;
 
   @media (max-width: $large) {
     padding-bottom: 230px;
-    padding-top: 130px;
+    padding-top: 251px;
   }
 
 
@@ -13,7 +13,7 @@
       display: none;
     }
     .header--closed & {
-      padding-top: 175px;
+      padding-top: 251px;
     }
     .header--no-js & {
       background-image: linear-gradient(180deg, $header-gradient 0%, rgba($header-gradient-dark, 0) 34.54%),
@@ -27,7 +27,7 @@
     padding-bottom: 278px;
   }
 
-  .header--no-js &{
+  .header--no-js & {
     padding-bottom: 200px;
   }
 }
@@ -86,7 +86,8 @@
       transform: translateX(-64%);
     }
   }
-  &--bottom{
+
+  &--bottom {
     margin-bottom: 0;
   }
 
@@ -100,5 +101,9 @@
     line-height: 39px;
     letter-spacing: 1.5px;
     margin-left: 14px;
+
+    &--top {
+      padding-bottom: 15px;
+    }
   }
 }

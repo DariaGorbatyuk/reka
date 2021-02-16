@@ -129,7 +129,10 @@
     <ul class="portfolio__slider">
       <li class="portfolio__item">
         <div class="portfolio__img-container">
-          <img src="./img/valentina.jpg" alt="Вилла Валентина">
+          <picture>
+            <source type="image/webp" srcset="./img/valentina.webp 1x, ./img/valentina@2x.webp 2x">
+            <img src="./img/valentina.jpg" alt="Вилла Валентина" srcset="./img/valentina@2x.jpg 2x" width="100%">
+          </picture>
         </div>
         <div class="portfolio__desc-container">
           <p class="portfolio__desc">Архитектура<span class="portfolio__size">300 м<sup>2</sup></span></p>
@@ -138,7 +141,10 @@
       </li>
       <li class="portfolio__item">
         <div class="portfolio__img-container">
-          <img src="./img/valentina-r.jpg" alt="Вилла Валентина">
+          <picture>
+            <source type="image/webp" srcset="./img/valentina-r.webp 1x, ./img/valentina-r@2x.webp 2x">
+            <img src="./img/valentina-r.jpg" alt="Вилла Валентина" srcset="./img/valentina-r@2x.jpg 2x" width="100%">
+          </picture>
         </div>
         <div class="portfolio__desc-container">
           <p class="portfolio__desc">Архитектура<span class="portfolio__size">300 м<sup>2</sup></span></p>
@@ -147,7 +153,10 @@
       </li>
       <li class="portfolio__item">
         <div class="portfolio__img-container">
-          <img src="./img/valentina-r.jpg" alt="Вилла Валентина">
+          <picture>
+            <source type="image/webp" srcset="./img/valentina-l.webp 1x, ./img/valentina-l@2x.webp 2x">
+            <img src="./img/valentina-l.jpg" alt="Вилла Валентина" srcset="./img/valentina-l@2x.jpg 2x" width="100%">
+          </picture>
         </div>
         <div class="portfolio__desc-container">
           <p class="portfolio__desc">Архитектура<span class="portfolio__size">300 м<sup>2</sup></span></p>
@@ -166,26 +175,63 @@
       <a class="about__excerpt" href="#">подробнее</a>
     </div>
     <div class="about__column about__column--r">
-      <img class="about__img" src="./img/about.jpg" alt="Просторная спальная комната в светло-серых тонах" width="100%">
+      <picture>
+        <source type="image/webp" srcset="./img/about.webp 1x, ./img/about@2x.jpg 2x">
+        <img class="about__img" src="./img/about.jpg" alt="Просторная спальная комната в светло-серых тонах"
+             width="100%" srcset="./img/about@2x.jpg 2x">
+      </picture>
     </div>
   </section>
   <section class="partners" id="partners">
     <div class="container container--small">
       <h2 class="partners__heading heading heading--tall">наши партнеры</h2>
       <ul class="partners__slider">
-        <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p1.svg" alt="Importhome"></a>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <picture>
+              <source media="(max-width: 768px)" type="image/webp" srcset="./img/p1-small.webp 1x, ./img/p1-small@2x.webp 2x">
+              <source type="image/webp" srcset="./img/p1.webp 1x, ./img/p1@2x.webp 2x">
+              <source media="(max-width: 768px)" srcset="./img/p1-small.png 1x,./img/p1-small@2x.png 2x">
+              <img src="./img/p1.png" alt="Importhome" width="247" height="26" srcset="./img/p1@2x.png">
+            </picture>
+          </a>
         </li>
-        <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p2.svg"
-                                                                           alt="Интерьеры экстра класса"></a></li>
-        <li class="partners__item"><a class="partners__link" href="#"><img class="partners__img"
-                                                                           src="./img/icon-p3.svg"
-                                                                           alt="Manders - английский декор стен"></a>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <picture>
+              <source media="(max-width: 768px)" type="image/webp" srcset="./img/p2-small.webp 1x, ./img/p2-small@2x.webp 2x">
+              <source type="image/webp" srcset="./img/p2.webp 1x, ./img/p2@2x.webp 2x">
+              <source media="(max-width: 768px)" srcset="./img/p2-small.png 1x,./img/p2-small@2x.png 2x">
+              <img src="./img/p2.png" alt="Интерьеры экстра класса" width="247" height="23" srcset="./img/p2@2x.png">
+            </picture>
+          </a>
         </li>
-        <li class="partners__item"><a class="partners__link" href="#"><img class="partners__img"
-                                                                           src="./img/icon-p4.svg" alt="СЭТКОМ"></a>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <picture>
+              <source type="image/webp" srcset="./img/p3.webp 1x, ./img/p3@2x.webp 2x">
+              <img src="./img/p3.png" alt="Manders - английский декор стен" width="170" height="32" srcset="./img/p3@2x.png">
+            </picture>
+          </a>
         </li>
-        <li class="partners__item"><a class="partners__link" href="#"><img src="./img/icon-p2.svg"
-                                                                           alt="Интерьеры экстра класса"></a></li>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <picture>
+              <source type="image/webp" srcset="./img/p3.webp 1x, ./img/p3@2x.webp 2x">
+              <img src="./img/p3.png" alt="СЭТКОМ" width="170" height="32" srcset="./img/p3@2x.png">
+            </picture>
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <picture>
+              <source media="(max-width: 768px)" type="image/webp" srcset="./img/p2-small.webp 1x, ./img/p2-small@2x.webp 2x">
+              <source type="image/webp" srcset="./img/p2.webp 1x, ./img/p2@2x.webp 2x">
+              <source media="(max-width: 768px)" srcset="./img/p2-small.png 1x,./img/p2-small@2x.png 2x">
+              <img src="./img/p2.png" alt="Интерьеры экстра класса" width="247" height="23" srcset="./img/p2@2x.png">
+            </picture>
+          </a>
+        </li>
       </ul>
     </div>
   </section>

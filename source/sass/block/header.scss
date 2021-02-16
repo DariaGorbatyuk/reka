@@ -14,22 +14,46 @@
   padding-bottom: 50px;
   flex: 0 0 auto;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(180deg, $header-gradient 0%, rgba($header-gradient-dark, 0) 34.54%),
+    linear-gradient(0deg, rgba($header-gradient-dark, 0.6), rgba($header-gradient-dark, 0.6)),
+    url("../img/header-slider-1@2x.jpg");
+  }
+
   &--two {
     background-image: linear-gradient(180deg, $header-gradient 0%, rgba($header-gradient-dark, 0) 34.54%),
     linear-gradient(0deg, rgba($header-gradient-dark, 0.6), rgba($header-gradient-dark, 0.6)),
     url("../img/header-slider-2.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(180deg, $header-gradient 0%, rgba($header-gradient-dark, 0) 34.54%),
+      linear-gradient(0deg, rgba($header-gradient-dark, 0.6), rgba($header-gradient-dark, 0.6)),
+      url("../img/header-slider-2@2x.jpg");
+    }
   }
 
   &--three {
     background-image: linear-gradient(180deg, $header-gradient 0%, rgba($header-gradient-dark, 0) 34.54%),
     linear-gradient(0deg, rgba($header-gradient-dark, 0.6), rgba($header-gradient-dark, 0.6)),
     url("../img/header-slider-3.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(180deg, $header-gradient 0%, rgba($header-gradient-dark, 0) 34.54%),
+      linear-gradient(0deg, rgba($header-gradient-dark, 0.6), rgba($header-gradient-dark, 0.6)),
+      url("../img/header-slider-3@2x.jpg");
+    }
   }
 
   &--four {
     background-image: linear-gradient(180deg, $header-gradient 0%, rgba($header-gradient-dark, 0) 34.54%),
     linear-gradient(0deg, rgba($header-gradient-dark, 0.6), rgba($header-gradient-dark, 0.6)),
     url("../img/header-slider-4.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(180deg, $header-gradient 0%, rgba($header-gradient-dark, 0) 34.54%),
+      linear-gradient(0deg, rgba($header-gradient-dark, 0.6), rgba($header-gradient-dark, 0.6)),
+      url("../img/header-slider-4@2x.jpg");
+    }
   }
 
   @media (max-width: $medium) {
@@ -73,7 +97,7 @@
   padding: 31px 4.95% 18px;
 
   &--slider-dark {
-    background-color: $header-gradient-dark;
+    background-color: $header-top;
     top: 0;
   }
 
@@ -127,10 +151,14 @@
 }
 
 .header__logo {
-  margin-right: auto;
+  margin-right: 8.9%;
   padding-right: 10px;
   align-self: flex-start;
   padding-bottom: 10px;
+
+  @media (max-width: $large) {
+    margin-right: auto;
+  }
 
   @media (max-width: $medium) {
     padding-right: 0;

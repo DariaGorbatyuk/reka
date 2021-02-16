@@ -50,6 +50,39 @@ function onScroll() {
 
 window.addEventListener('scroll', onScroll);
 
+var currentBtn = pageHeader.querySelector('.header__slider-btn--active');
+function onHeaderSliderClick(evt) {
+  if (evt.target.type !== 'button') {
+    return;
+  }
+  currentBtn.classList.remove('header__slider-btn--active');
+  switch (evt.target.dataset.img) {
+    case '1' :
+      pageHeader.setAttribute('class', 'header header--closed');
+      evt.target.classList.add('header__slider-btn--active');
+      currentBtn = evt.target;
+      break;
+    case '2' :
+      pageHeader.setAttribute('class', 'header header--closed header--two');
+      evt.target.classList.add('header__slider-btn--active');
+      currentBtn = evt.target;
+      break;
+    case '3' :
+      pageHeader.setAttribute('class', 'header header--closed header--three');
+      evt.target.classList.add('header__slider-btn--active');
+      currentBtn = evt.target;
+      break;
+    case '4' :
+      pageHeader.setAttribute('class', 'header header--closed header--four');
+      evt.target.classList.add('header__slider-btn--active');
+      currentBtn = evt.target;
+      break;
+  }
+}
+
+var headerSlider = pageHeader.querySelector('.header__slider-btn-container');
+headerSlider.addEventListener('click', onHeaderSliderClick);
+
 $(document).ready(function () {
   $('.portfolio__slider').slick({
     centerMode: true,
