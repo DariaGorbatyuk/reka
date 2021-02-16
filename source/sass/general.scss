@@ -14,7 +14,8 @@ body {
   padding: 0;
   min-height: 100%;
   min-width: $tiny;
-  display: block;
+  display: flex;
+  flex-direction: column;
   font-family: $roboto;
   font-weight: normal;
   font-style: normal;
@@ -25,6 +26,7 @@ body {
   overflow-x: hidden;
   //overflow-y: hidden;
 }
+
 
 img {
   max-width: 100%;
@@ -43,9 +45,9 @@ a {
   color: inherit;
   cursor: pointer;
 
-/*  &:focus {
-    outline: none;
-  }*/
+  /*  &:focus {
+      outline: none;
+    }*/
 }
 
 a:not([href]) {

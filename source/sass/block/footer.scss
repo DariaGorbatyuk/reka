@@ -2,6 +2,7 @@
   background-color: $bright-gray;
   padding-top: 52px;
   padding-bottom: 35px;
+  flex: 0 0 auto;
 
   @media (max-width: $small) {
     padding-top: 120px;
