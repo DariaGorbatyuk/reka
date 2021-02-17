@@ -24,7 +24,7 @@
   &--two {
     background-image: linear-gradient(180deg, $header-gradient 0%, rgba($header-gradient-dark, 0) 34.54%),
     linear-gradient(0deg, rgba($header-gradient-dark, 0.6), rgba($header-gradient-dark, 0.6)),
-    url("../img/header-slider-2.jpg");
+    url("../img/header-slider-1.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(180deg, $header-gradient 0%, rgba($header-gradient-dark, 0) 34.54%),
