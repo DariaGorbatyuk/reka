@@ -140,6 +140,20 @@ button {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
+.visually-hidden,
+input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 .container {
   max-width: 1920px;
   min-width: 320px;
@@ -227,7 +241,8 @@ button {
   padding-bottom: 50px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
-          flex: 0 0 auto; }
+          flex: 0 0 auto;
+  background-color: #1a1919; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .header {
       background-image: -webkit-gradient(linear, left top, left bottom, from(#1a1919), color-stop(34.54%, rgba(25, 25, 25, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(25, 25, 25, 0.6)), to(rgba(25, 25, 25, 0.6))), url("../img/header-slider-1@2x.jpg");
@@ -766,229 +781,6 @@ button {
 .socials__link:active svg {
   fill: #bf9c62;
   opacity: 0.8; }
-
-.visually-hidden,
-input[type="checkbox"] {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden; }
-
-.directions__heading {
-  margin-top: 0;
-  margin-bottom: 61px;
-  margin-left: 14px; }
-
-.directions__list {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.directions__item {
-  list-style: none;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10.67%, rgba(19, 18, 23, 0.82)), color-stop(63.44%, rgba(19, 18, 23, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(19, 18, 23, 0.3)), to(rgba(19, 18, 23, 0.3))), url("../img/architecture.jpg");
-  background-image: linear-gradient(0deg, rgba(19, 18, 23, 0.82) 10.67%, rgba(19, 18, 23, 0) 63.44%), linear-gradient(0deg, rgba(19, 18, 23, 0.3), rgba(19, 18, 23, 0.3)), url("../img/architecture.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 642px;
-  position: relative; }
-  .directions__item:first-child {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 49.6%;
-            flex: 0 0 49.6%; }
-    .directions__item:first-child:hover {
-      background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10.67%, rgba(19, 18, 23, 0.52)), color-stop(33.44%, rgba(19, 18, 23, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(19, 18, 23, 0.3)), to(rgba(19, 18, 23, 0.2))), url("../img/architecture.jpg");
-      background-image: linear-gradient(0deg, rgba(19, 18, 23, 0.52) 10.67%, rgba(19, 18, 23, 0) 33.44%), linear-gradient(0deg, rgba(19, 18, 23, 0.3), rgba(19, 18, 23, 0.2)), url("../img/architecture.jpg"); }
-  .directions__item:last-child {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 48.84%;
-            flex: 0 0 48.84%;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10.67%, rgba(19, 18, 23, 0.82)), color-stop(63.44%, rgba(19, 18, 23, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(19, 18, 23, 0.3)), to(rgba(19, 18, 23, 0.3))), url("../img/designer.jpg");
-    background-image: linear-gradient(0deg, rgba(19, 18, 23, 0.82) 10.67%, rgba(19, 18, 23, 0) 63.44%), linear-gradient(0deg, rgba(19, 18, 23, 0.3), rgba(19, 18, 23, 0.3)), url("../img/designer.jpg"); }
-    .directions__item:last-child:hover {
-      background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10.67%, rgba(19, 18, 23, 0.52)), color-stop(33.44%, rgba(19, 18, 23, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(19, 18, 23, 0.3)), to(rgba(19, 18, 23, 0.2))), url("../img/designer.jpg");
-      background-image: linear-gradient(0deg, rgba(19, 18, 23, 0.52) 10.67%, rgba(19, 18, 23, 0) 33.44%), linear-gradient(0deg, rgba(19, 18, 23, 0.3), rgba(19, 18, 23, 0.2)), url("../img/designer.jpg"); }
-
-.directions__link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; }
-
-.directions__name {
-  font-family: "Cormorant Garamond", "Georgia", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 46px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffffff;
-  position: relative;
-  display: block;
-  text-align: center;
-  margin-top: 514px;
-  padding-bottom: 15px; }
-  .directions__name::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 127px;
-    height: 3px;
-    background-color: #ccbb9e;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto; }
-  .directions__item:last-child .directions__name {
-    margin-left: 47px; }
-
-.features {
-  padding-top: 102px;
-  background-color: #dddcd7;
-  padding-bottom: 108px; }
-
-.features__slogan {
-  font-family: "Cormorant Garamond", "Georgia", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 38px;
-  line-height: 59px;
-  text-align: center;
-  letter-spacing: 9.5px;
-  text-transform: uppercase;
-  color: #3e3d3c;
-  position: relative;
-  margin: 0 30px 64px 105px; }
-  .features__slogan span {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .features__slogan span::before, .features__slogan span::after {
-      content: "";
-      height: 3px;
-      -webkit-box-flex: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
-      background-color: #ccbb9e; }
-    .features__slogan span::before {
-      margin-right: 63px; }
-    .features__slogan span::after {
-      margin-left: 44px; }
-
-.features__img-container {
-  margin-bottom: 87px; }
-
-.features__text {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 11px;
-  line-height: 14px;
-  letter-spacing: 0.16em;
-  text-align: center;
-  text-transform: uppercase;
-  color: #131217;
-  margin-top: 0;
-  margin-right: 10px;
-  margin-bottom: 8px; }
-
-.features__heading {
-  margin-top: 0;
-  margin-bottom: 60px; }
-
-.features__list {
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 14.35%;
-  padding-right: 12.16%;
-  margin-bottom: 60px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.features__item {
-  font-family: "Cormorant Garamond", "Georgia", serif;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #131217;
-  list-style: none;
-  position: relative;
-  max-width: 100%;
-  min-width: 0;
-  word-break: break-word;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
-  .features__item:nth-child(3n+1) {
-    padding-right: 126px; }
-  .features__item:nth-child(3n+2) {
-    padding-right: 172px; }
-  .features__item:nth-child(3n+1):not(:last-child)::after, .features__item:nth-child(3n+2):not(:last-child)::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 102px;
-    height: 13px;
-    background-repeat: repeat;
-    right: 0;
-    background-image: url("../img/features-arrow.svg");
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-
-.features__columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 14.28%;
-  padding-right: 11.9%;
-  margin-top: 0; }
-
-.features__column {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
-  color: #000000;
-  margin-top: 0;
-  margin-bottom: 0; }
-  .features__column:nth-of-type(2n+1) {
-    width: 558px;
-    margin-right: 60px; }
-  .features__column:nth-of-type(2n+2) {
-    width: 505px; }
 
 .portfolio {
   padding-top: 65px;

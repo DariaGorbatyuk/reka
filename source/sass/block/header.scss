@@ -13,6 +13,7 @@
   background-clip: content-box;
   padding-bottom: 50px;
   flex: 0 0 auto;
+  background-color: $header-gradient;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(180deg, $header-gradient 0%, rgba($header-gradient-dark, 0) 34.54%),
