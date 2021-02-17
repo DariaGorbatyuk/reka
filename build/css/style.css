@@ -248,8 +248,8 @@ input[type="checkbox"] {
       background-image: -webkit-gradient(linear, left top, left bottom, from(#1a1919), color-stop(34.54%, rgba(25, 25, 25, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(25, 25, 25, 0.6)), to(rgba(25, 25, 25, 0.6))), url("../img/header-slider-1@2x.jpg");
       background-image: linear-gradient(180deg, #1a1919 0%, rgba(25, 25, 25, 0) 34.54%), linear-gradient(0deg, rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)), url("../img/header-slider-1@2x.jpg"); } }
   .header--two {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#1a1919), color-stop(34.54%, rgba(25, 25, 25, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(25, 25, 25, 0.6)), to(rgba(25, 25, 25, 0.6))), url("../img/header-slider-2.jpg");
-    background-image: linear-gradient(180deg, #1a1919 0%, rgba(25, 25, 25, 0) 34.54%), linear-gradient(0deg, rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)), url("../img/header-slider-2.jpg"); }
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1a1919), color-stop(34.54%, rgba(25, 25, 25, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(25, 25, 25, 0.6)), to(rgba(25, 25, 25, 0.6))), url("../img/header-slider-1.jpg");
+    background-image: linear-gradient(180deg, #1a1919 0%, rgba(25, 25, 25, 0) 34.54%), linear-gradient(0deg, rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)), url("../img/header-slider-1.jpg"); }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       .header--two {
         background-image: -webkit-gradient(linear, left top, left bottom, from(#1a1919), color-stop(34.54%, rgba(25, 25, 25, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(25, 25, 25, 0.6)), to(rgba(25, 25, 25, 0.6))), url("../img/header-slider-2@2x.jpg");
