@@ -259,7 +259,10 @@ button {
       background-color: #e5e5e5;
       background-image: none;
       height: 100vh;
-      overflow: scroll; }
+      overflow: scroll;
+      position: absolute;
+      z-index: 10;
+      width: 100%; }
     .header--no-js {
       background-image: none; } }
 
@@ -304,7 +307,7 @@ button {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      position: relative; }
+      position: fixed; }
       .header--closed .header__top {
         padding-bottom: 21px; }
         .header--closed .header__top::after {

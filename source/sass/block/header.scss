@@ -63,6 +63,9 @@
       background-image: none;
       height: 100vh;
       overflow: scroll;
+      position: absolute;
+      z-index: 10;
+      width: 100%;
     }
     &--no-js {
       background-image: none;
@@ -117,7 +120,7 @@
 
   @media (max-width: $medium) {
     flex-direction: column;
-    position: relative;
+    position: fixed;
 
     .header--closed & {
       padding-bottom: 21px;
