@@ -479,11 +479,12 @@
 .header__slider-btn {
   display: block;
   width: 59px;
-  height: 3px;
+  height: 11px;
   background-color: rgba($gold, 0.31);
   border: 0;
-  padding: 0;
+  padding: 4px 0;
   margin-right: 18px;
+  background-clip: content-box;
 
   &:nth-last-of-type(1) {
     margin-right: 0;

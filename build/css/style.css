@@ -629,11 +629,12 @@ button {
 .header__slider-btn {
   display: block;
   width: 59px;
-  height: 3px;
+  height: 11px;
   background-color: rgba(204, 187, 158, 0.31);
   border: 0;
-  padding: 0;
-  margin-right: 18px; }
+  padding: 4px 0;
+  margin-right: 18px;
+  background-clip: content-box; }
   .header__slider-btn:nth-last-of-type(1) {
     margin-right: 0; }
   .header__slider-btn:hover, .header__slider-btn:focus {
