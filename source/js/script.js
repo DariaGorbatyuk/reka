@@ -29,14 +29,7 @@ function openHeader() {
 function onScroll() {
   if (window.pageYOffset < 90 || pageHeader.classList.contains('header--open')) {
     menu.classList.remove('header__top--slider-white');
-    menu.classList.remove('header__top--slider-dark');
-  }
-  if (window.pageYOffset > 90 && window.pageYOffset < 700) {
-    menu.classList.remove('header__top--slider-white');
-    menu.classList.add('header__top--slider-dark');
-
-  } else if (window.pageYOffset > 700) {
-    menu.classList.remove('header__top--slider-dark');
+  } else {
     menu.classList.add('header__top--slider-white');
   }
 }
@@ -105,8 +98,8 @@ $(document).ready(function () {
         },
       },
     ],
-       autoplay: true,
-       autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 3000,
   });
 });
 
