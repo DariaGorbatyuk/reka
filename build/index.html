@@ -19,69 +19,71 @@
   <!--Изначально стоит header--no-js, если js работает он меняется на header--closed, при клике на toggle меняется на header--open.
     header--closed  header--no-js  header--open-->
   <div class="container  container--header">
-    <div class="header__container-top">
-      <div class="header__top">
-        <a class="header__logo">
-          <svg width="272" height="28" role="img" aria-label="StudioKora">
-            <use xlink:href="img/sprite.svg#icon-logo"></use>
-          </svg>
-        </a>
-        <button class="header__nav-toggle" type="button" aria-label="Открыть/закрыть меню"><span></span></button>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="#about" class="header__nav-link">О компании</a></li>
-            <li class="header__nav-item"><a href="#" class="header__nav-link">Архитектура</a></li>
-            <li class="header__nav-item"><a href="#" class="header__nav-link">Дизайн интерьера</a></li>
-            <li class="header__nav-item"><a href="#portfolio" class="header__nav-link">Галерея</a></li>
-            <li class="header__nav-item"><a href="#partners" class="header__nav-link">Сотрудничество</a></li>
-            <li class="header__nav-item"><a href="#contacts" class="header__nav-link">Контакты</a></li>
-          </ul>
-        </nav>
-        <a class="header__tel" href="tel:+78126459810">
-          <svg class="header__tel-svg" width="24" height="24" role="img">
-            <use xlink:href="img/sprite.svg#icon-tel"></use>
-          </svg>
-          <span class="header__tel-number">+7 (812) 645 98 10</span></a>
-        <div class="header__info">
-          <address class="header__address">Санкт-петербург, ул. зверинская 33, офис 13</address>
-          <ul class="header__socials socials">
-            <li class="socials__item">
-              <a href="#" class="socials__link" aria-label="Мы в facebook">
-                <svg width="33" height="32" role="img">
-                  <use xlink:href="img/sprite.svg#icon-f"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link" aria-label="Мы на YouTube">
-                <svg width="33" height="32" role="img">
-                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" class="socials__link">
-                <svg width="33" height="32" role="img" aria-label="Мы в instagram">
-                  <use xlink:href="img/sprite.svg#icon-inst"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+    <div class="header__up">
+      <div class="header__container-top">
+        <div class="header__top">
+          <a class="header__logo">
+            <svg width="272" height="28" role="img" aria-label="StudioKora">
+              <use xlink:href="img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <button class="header__nav-toggle" type="button" aria-label="Открыть/закрыть меню"><span></span></button>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a href="#about" class="header__nav-link">О компании</a></li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Архитектура</a></li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Дизайн интерьера</a></li>
+              <li class="header__nav-item"><a href="#portfolio" class="header__nav-link">Галерея</a></li>
+              <li class="header__nav-item"><a href="#partners" class="header__nav-link">Сотрудничество</a></li>
+              <li class="header__nav-item"><a href="#contacts" class="header__nav-link">Контакты</a></li>
+            </ul>
+          </nav>
+          <a class="header__tel" href="tel:+78126459810">
+            <svg class="header__tel-svg" width="24" height="24" role="img">
+              <use xlink:href="img/sprite.svg#icon-tel"></use>
+            </svg>
+            <span class="header__tel-number">+7 (812) 645 98 10</span></a>
+          <div class="header__info">
+            <address class="header__address">Санкт-петербург, ул. зверинская 33, офис 13</address>
+            <ul class="header__socials socials">
+              <li class="socials__item">
+                <a href="#" class="socials__link" aria-label="Мы в facebook">
+                  <svg width="33" height="32" role="img">
+                    <use xlink:href="img/sprite.svg#icon-f"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link" aria-label="Мы на YouTube">
+                  <svg width="33" height="32" role="img">
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg width="33" height="32" role="img" aria-label="Мы в instagram">
+                    <use xlink:href="img/sprite.svg#icon-inst"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      <section class="header__bottom promo">
+        <p class="promo__slogan">Меняем качество жизни</p>
+        <h1 class="visually-hidden">Студия Кора: архитектура, дизайн интерьера</h1>
+        <p class="promo__heading promo__heading--top">Архитектура</p>
+        <p class="promo__heading promo__heading--bottom">дизайн интерьера</p>
+      </section>
     </div>
-    <section class="header__bottom promo">
-      <p class="promo__slogan">Меняем качество жизни</p>
-      <h1 class="visually-hidden">Студия Кора: архитектура, дизайн интерьера</h1>
-      <p class="promo__heading promo__heading--top">Архитектура</p>
-      <p class="promo__heading promo__heading--bottom">дизайн интерьера</p>
-    </section>
-    <div class="header__slider-btn-container">
-      <button class="header__slider-btn header__slider-btn--active" type="button" data-img="1"></button>
-      <button class="header__slider-btn" type="button" data-img="2"></button>
-      <button class="header__slider-btn" type="button" data-img="3"></button>
-      <button class="header__slider-btn" type="button" data-img="4"></button>
-    </div>
+  </div>
+  <div class="header__slider">
+    <div class="header__item header__item--first"></div>
+    <div class="header__item header__item--second"></div>
+    <div class="header__item header__item--third"></div>
+    <div class="header__item header__item--fourth"></div>
   </div>
 </header>
 <main class="main">
