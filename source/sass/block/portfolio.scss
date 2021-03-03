@@ -36,6 +36,15 @@
   }
 }
 
+.portfolio__desc-container {
+  opacity: 0;
+  @media (max-width: $small) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .portfolio__slider {
   margin: 0;
   padding: 0;
@@ -101,7 +110,8 @@
   }
 }
 
-.portfolio__slider .slick-center img {
+.portfolio__slider .slick-center img,
+.portfolio__slider .slick-center .portfolio__desc-container {
   opacity: 1;
 }
 
@@ -113,13 +123,6 @@
   }
 }
 
-.portfolio__desc-container {
-  @media (max-width: $small) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 
 .portfolio__desc {
   font-family: $pt;
