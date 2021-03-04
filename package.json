@@ -52,6 +52,7 @@
     "node": "12.x"
   },
   "dependencies": {
-    "del": "^4.1.1"
+    "del": "^4.1.1",
+    "jquery.nicescroll": "^3.7.6"
   }
 }
