@@ -80,8 +80,8 @@ $(document).ready(function () {
         },
       },
     ],
-/*    autoplay: true,
-    autoplaySpeed: 3000,*/
+    autoplay: true,
+    autoplaySpeed: 3000,
   });
 });
 
