@@ -90,7 +90,9 @@ body {
 
 img {
   max-width: 100%;
-  display: block; }
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 input,
 textarea,
@@ -101,10 +103,7 @@ button {
 a {
   text-decoration: none;
   color: inherit;
-  cursor: pointer;
-  /*  &:focus {
-      outline: none;
-    }*/ }
+  cursor: pointer; }
 
 a:not([href]) {
   cursor: auto; }
@@ -903,11 +902,18 @@ input[type="checkbox"] {
       max-height: 217px; } }
 
 .portfolio__slider .slick-center img,
-.portfolio__slider .slick-center .portfolio__desc-container {
+.portfolio__slider .slick-active .portfolio__desc-container {
   opacity: 1; }
 
 .portfolio__img-container {
   margin-bottom: 34px; }
+  @media (max-width: 1280px) {
+    .portfolio__img-container {
+      height: 500px;
+      overflow: hidden; } }
+  @media (max-width: 768px) {
+    .portfolio__img-container {
+      height: 317px; } }
   @media (max-width: 420px) {
     .portfolio__img-container {
       margin-bottom: 11px; } }

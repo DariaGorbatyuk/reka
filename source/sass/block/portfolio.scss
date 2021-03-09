@@ -38,6 +38,7 @@
 
 .portfolio__desc-container {
   opacity: 0;
+
   @media (max-width: $small) {
     display: flex;
     justify-content: space-between;
@@ -111,12 +112,21 @@
 }
 
 .portfolio__slider .slick-center img,
-.portfolio__slider .slick-center .portfolio__desc-container {
+.portfolio__slider .slick-active .portfolio__desc-container {
   opacity: 1;
 }
 
 .portfolio__img-container {
   margin-bottom: 34px;
+
+  @media (max-width: $large) {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  @media (max-width: $medium) {
+    height: 317px;
+  }
 
   @media (max-width: $small) {
     margin-bottom: 11px;
