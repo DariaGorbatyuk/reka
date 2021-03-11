@@ -105,15 +105,3 @@ $(document).ready(function () {
     ],
   });
 });
-
-$('body').css('overflow', 'hidden');
-
-$(document).ready(
-  function () {
-    $('html').niceScroll({
-      cursorcolor: '#131217',
-      scrollspeed: 10, // scrolling speed отзывчивость
-      mousescrollstep: 70, // сколько пролетает после прокрутки
-    });
-  },
-);
